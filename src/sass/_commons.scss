@@ -1,0 +1,45 @@
+@import '/node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  background-color: $bgColor;
+  font-family: $fontFamily;
+  font-weight: $mainFontWeight;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  display: block;
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  display: flex;
+}
