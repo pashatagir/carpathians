@@ -1,0 +1,6 @@
+section:not(:first-of-type) {
+  padding-top: 80px;
+  @include mq(mobile-only) {
+    padding-top: 52px;
+  }
+}
