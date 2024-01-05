@@ -1,0 +1,21 @@
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  color: $bgColor;
+}
+
+.button {
+  background-color: $accentColor;
+  padding: 16.5px 24.3vw;
+  text-transform: uppercase;
+  @include font(inherit, null, normal, null);
+  font-size: 4vw;
+  margin-inline: auto;
+  @include mq(afterMobile) {
+    padding: 16.5px 91px;
+    font-size: 16px;
+  }
+}

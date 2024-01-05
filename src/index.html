@@ -7,79 +7,81 @@
     <title>Carpathian</title>
   </head>
   <body>
-    <header id="header">
+    <header class="header">
       <div class="container">
-        <nav>
+        <nav class="header__navigation">
           <a href="#header"
             ><svg width="40" height="40">
-              <use></use></svg></a
-          ><button type="button" class="button">
+              <use href="./images/sprite.svg#logo"></use></svg></a
+          ><button type="button">
             <svg width="40" height="40">
-              <use></use>
+              <use href="./images/sprite.svg#menu"></use>
             </svg>
           </button>
         </nav>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="header">
         <div class="container">
-          <h1>TOURS TO THE CARPATHIANS FROM LVIV</h1>
-          <p>Journeys to the very heart of the Carpathians for those who want a real reboot</p>
-          <button type="button">Book a tour</button>
+          <h1 class="title hero__title">TOURS TO THE CARPATHIANS FROM LVIV</h1>
+          <p class="hero__paragraph">
+            Journeys to the very heart of the Carpathians for those who want a real reboot
+          </p>
+          <button type="button" class="button hero__button">Book a tour</button>
         </div>
       </section>
       <section class="about">
         <div class="container">
-          <h2>About us</h2>
-          <p>
+          <h2 class="title about__title">About us</h2>
+          <p class="about__paragraph">
             Travel is our life. We have been organizing tours to the Carpathians since 2007 and have
             never been bored for a single day. The Carpathians are many interesting and unexplored
-            places that are worth visiting and showing them to others. Coming to the Carpathians
-            will make you forget about the polluted, noisy world and enjoy untouched nature. From
-            picturesque forests to clean rivers and lakes and Carpathian streams between the
-            mountains, which offer magical landscapes and allow you to forget about all problems and
-            unnecessary thoughts.
+            places that are worth visiting and showing them to others. <br /><br />
+            Coming to the Carpathians will make you forget about the polluted, noisy world and enjoy
+            untouched nature. From picturesque forests to clean rivers and lakes and Carpathian
+            streams between the mountains, which offer magical landscapes and allow you to forget
+            about all problems and unnecessary thoughts.
           </p>
         </div>
       </section>
       <section class="advantages">
         <div class="container">
-          <h2>Our advantages</h2>
-          <ul>
-            <li>
+          <h2 class="title advantages__title">Our advantages</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
               <svg width="24" height="24">
-                <use></use>
+                <use href="./images/sprite.svg#star"></use>
               </svg>
               author's tours
             </li>
-            <li>
+            <li class="advantages__item">
               <svg width="24" height="24">
-                <use></use>
+                <use href="./images/sprite.svg#star"></use>
               </svg>
               іndividual approach
             </li>
-            <li>
+            <li class="advantages__item">
               <svg width="24" height="24">
-                <use></use>
+                <use href="./images/sprite.svg#star"></use>
               </svg>
               affordable prices
             </li>
-            <li>
+            <li class="advantages__item">
               <svg width="24" height="24">
-                <use></use>
+                <use href="./images/sprite.svg#star"></use>
               </svg>
               comfortable transfer
             </li>
-            <li>
+            <li class="advantages__item">
               <svg width="24" height="24">
-                <use></use>
+                <use href="./images/sprite.svg#star"></use>
               </svg>
               professional guides
             </li>
-            <li>
+            <li class="advantages__item">
               <svg width="24" height="24">
-                <use></use>
+                <use href="./images/sprite.svg#star"></use>
               </svg>
               accommodation in hotels from 3+ *
             </li>
@@ -88,22 +90,61 @@
       </section>
       <section class="tours">
         <div class="container">
-          <h2>Upcoming tours</h2>
+          <h2 class="title tours__title">Upcoming tours</h2>
           <ul>
             <li>
-              <img src="#" alt="" />
+              <picture>
+                <source
+                  media="(max-width:767px )"
+                  srcset="./images/overlay_m_1x.jpg 1x, ./images/overlay_m_2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source media="(min-width:768px )" srcset="" type="image/jpg" />
+                <source media="(min-width:1440px )" srcset="" type="image/jpg" />
+                <img
+                  src="./images/overlay_m_1x.jpg 1x, ./images/overlay_m_2x.jpg 2x"
+                  alt="Hoverla"
+                />
+              </picture>
+
               <h3>Week in Carpathians</h3>
               <p>From UAH 9,999/person</p>
               <button type="button">More details</button>
             </li>
             <li>
-              <img src="#" alt="" />
+              <picture>
+                <source
+                  media="(max-width:767px )"
+                  srcset="./images/overlay1_m_1x.jpg 1x, ./images/overlay1_m_2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source media="(min-width:768px )" srcset="" type="image/jpg" />
+                <source media="(min-width:1440px )" srcset="" type="image/jpg" />
+                <img
+                  src="./images/overlay1_m_1x.jpg 1x, ./images/overlay1_m_2x.jpg 2x"
+                  alt="Bukovel"
+                />
+              </picture>
+
               <h3>Ski tour to Bukovel</h3>
               <p>From UAH 7,499/person</p>
               <button type="button">More details</button>
             </li>
             <li>
-              <img src="#" alt="" />
+              <picture>
+                <source
+                  media="(max-width:767px )"
+                  srcset="./images/overlay2_m_1x.jpg 1x, ./images/overlay2_m_2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source media="(min-width:768px )" srcset="" type="image/jpg" />
+                <source media="(min-width:1440px )" srcset="" type="image/jpg" />
+                <img
+                  src="./images/overlay2_m_1x.jpg 1x, ./images/overlay2_m_2x.jpg 2x"
+                  alt="Carpathians"
+                />
+              </picture>
+
               <h3>Ascent to Hoverla</h3>
               <p>From UAH 4,499/person</p>
               <button type="button">More details</button>
@@ -113,7 +154,7 @@
       </section>
       <section class="reviews">
         <div class="container">
-          <h2>Reviews</h2>
+          <h2 class="title reviews__title">Reviews</h2>
           <ul>
             <li>
               <img src="#" alt="" />
@@ -155,7 +196,7 @@
       </section>
       <section class="gallery">
         <div class="container">
-          <h2>Gallery</h2>
+          <h2 class="title gallery__title">Gallery</h2>
           <ul>
             <li>
               <picture>
@@ -213,7 +254,7 @@
       </section>
       <section class="questions">
         <div class="container">
-          <h2>Do you have any questions?</h2>
+          <h2 class="title questions__title">Do you have any questions?</h2>
           <p>
             You can leave your questions here and our manager will call you back within 10 minutes
           </p>
@@ -228,7 +269,7 @@
     </main>
     <footer>
       <div class="container">
-        <h2>Contacts</h2>
+        <h2 class="title footer__title">Contacts</h2>
         <address>
           <a href="">
             <svg width="32" height="32">

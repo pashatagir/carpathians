@@ -1,7 +1,11 @@
 .container {
   width: 100%;
   padding-inline: 32px;
-  margin: 0 auto;
+  margin-inline: auto;
+
+  @include mq(mobile) {
+    width: 375px;
+  }
 
   @include mq(tablet) {
     width: 786px;
@@ -12,4 +16,8 @@
     width: 1440px;
     padding-inline: 135px;
   }
+}
+
+.advantages .container {
+  padding-inline: 30px;
 }

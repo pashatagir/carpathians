@@ -1,1 +1,20 @@
-    
+.title {
+  text-align: center;
+  color: $mainBlackColor;
+  @include font($secondFontWeight, 32px, normal, null);
+  margin-bottom: 28px;
+}
+.hero__title {
+  color: $bgColor;
+  @include font($secondFontWeight, null, normal, null);
+  font-size: 10vw;
+  margin-bottom: 60px;
+  @include mq(afterMobile) {
+    font-size: 40px;
+  }
+}
+
+.questions__title {
+  @include font(inherit, 20px, normal, null);
+  margin-bottom: 20px;
+}

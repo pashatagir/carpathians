@@ -1,0 +1,33 @@
+.advantages__list {
+  padding: 87px 0px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    url(/src/images/advantages_bg_m_1x.jpg) no-repeat center;
+  background-size: cover;
+
+  @include mq(retina) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+      url(/src/images/advantages_bg_m_2x.jpg) no-repeat center;
+    background-size: cover;
+  }
+}
+
+.advantages__item {
+  @include flex(flex, null, center);
+  gap: 2.1vw;
+  padding: 8px 0px;
+  padding-left: 6.5vw;
+  @include font($secondFontWeight, 3.7vw, normal, null);
+
+  @include mq(afterMobile) {
+    gap: 8px;
+    padding: 8px 0px;
+    padding-left: 30px;
+    @include font($secondFontWeight, 14px, normal, null);
+  }
+
+  color: $bgColor;
+  background-color: $accentColor;
+  &:not(:last-child) {
+    margin-bottom: 28px;
+  }
+}

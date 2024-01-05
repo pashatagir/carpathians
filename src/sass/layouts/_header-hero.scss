@@ -1,0 +1,31 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 20px;
+
+  &__navigation {
+    @include flex(flex, space-between, center);
+  }
+}
+
+.hero {
+  padding: 188px 0px 193px;
+  background: url('/src/images/hero_bg_1x.jpg') no-repeat center;
+  background-size: cover;
+  @include mq(retina) {
+    background: url('/src/images/hero_bg_2x.jpg') no-repeat center;
+    background-size: cover;
+  }
+  @include mq(afterMobile) {
+    background-position: center;
+    width: 375px;
+    margin-inline: auto;
+  }
+
+  &__paragraph {
+    @include font(inherit, 16px, normal, null);
+    text-align: center;
+    margin-bottom: 88px;
+    color: $bgColor;
+  }
+}
