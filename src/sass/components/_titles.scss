@@ -18,3 +18,9 @@
   @include font(inherit, 20px, normal, null);
   margin-bottom: 20px;
 }
+
+h3.tour__title {
+  text-align: left;
+  @include font($thirdFontWeight, 20px, normal, null);
+  margin-bottom: 16px;
+}

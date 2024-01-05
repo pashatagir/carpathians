@@ -3,19 +3,25 @@ button {
   padding: 0;
   border: none;
   background-color: transparent;
-  display: flex;
+  @include flex(flex, center, center);
   color: $bgColor;
 }
 
 .button {
   background-color: $accentColor;
-  padding: 16.5px 24.3vw;
+  padding: 16.5px 0;
+  padding-inline: 24.3vw;
   text-transform: uppercase;
   @include font(inherit, null, normal, null);
   font-size: 4vw;
   margin-inline: auto;
   @include mq(afterMobile) {
-    padding: 16.5px 91px;
+    padding-inline: 91px;
     font-size: 16px;
   }
+}
+
+.tour__button {
+  padding-inline: 0;
+  width: 100%;
 }

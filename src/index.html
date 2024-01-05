@@ -89,67 +89,109 @@
         </div>
       </section>
       <section class="tours">
+        <h2 class="title tours__title">Upcoming tours</h2>
         <div class="container">
-          <h2 class="title tours__title">Upcoming tours</h2>
-          <ul>
-            <li>
-              <picture>
-                <source
-                  media="(max-width:767px )"
-                  srcset="./images/overlay_m_1x.jpg 1x, ./images/overlay_m_2x.jpg 2x"
-                  type="image/jpg"
-                />
-                <source media="(min-width:768px )" srcset="" type="image/jpg" />
-                <source media="(min-width:1440px )" srcset="" type="image/jpg" />
-                <img
-                  src="./images/overlay_m_1x.jpg 1x, ./images/overlay_m_2x.jpg 2x"
-                  alt="Hoverla"
-                />
-              </picture>
+          <div class="swiper">
+            <ul class="tours__list swiper-wrapper">
+              <li class="tours__item swiper-slide">
+                <picture>
+                  <source
+                    media="(max-width:767px )"
+                    srcset="./images/overlay_m_1x.jpg 1x, ./images/overlay_m_2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width:768px )"
+                    srcset="./images/overlay_m_1x.jpg 1x, ./images/overlay_m_2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width:1440px )"
+                    srcset="./images/overlay_m_1x.jpg 1x, ./images/overlay_m_2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/overlay_m_1x.jpg 1x, ./images/overlay_m_2x.jpg 2x"
+                    alt="Hoverla"
+                  />
+                </picture>
+                <div class="tours__wrapper">
+                  <h3 class="title tour__title">Week in Carpathians</h3>
+                  <p class="tours__paragraph">From UAH 9,999/person</p>
+                  <button type="button" class="button tour__button">More details</button>
+                </div>
+              </li>
+              <li class="tours__item swiper-slide">
+                <picture>
+                  <source
+                    media="(max-width:767px )"
+                    srcset="./images/overlay1_m_1x.jpg 1x, ./images/overlay1_m_2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width:768px )"
+                    srcset="./images/overlay_m_1x.jpg 1x, ./images/overlay_m_2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width:1440px )"
+                    srcset="./images/overlay_m_1x.jpg 1x, ./images/overlay_m_2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/overlay1_m_1x.jpg 1x, ./images/overlay1_m_2x.jpg 2x"
+                    alt="Bukovel"
+                  />
+                </picture>
+                <div class="tours__wrapper">
+                  <h3 class="title tour__title">Ski tour to Bukovel</h3>
+                  <p class="tours__paragraph">From UAH 7,499/person</p>
+                  <button type="button" class="button tour__button">More details</button>
+                </div>
+              </li>
+              <li class="tours__item swiper-slide">
+                <picture>
+                  <source
+                    media="(max-width:767px )"
+                    srcset="./images/overlay2_m_1x.jpg 1x, ./images/overlay2_m_2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width:768px )"
+                    srcset="./images/overlay_m_1x.jpg 1x, ./images/overlay_m_2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width:1440px )"
+                    srcset="./images/overlay_m_1x.jpg 1x, ./images/overlay_m_2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/overlay2_m_1x.jpg 1x, ./images/overlay2_m_2x.jpg 2x"
+                    alt="Carpathians"
+                  />
+                </picture>
+                <div class="tours__wrapper">
+                  <h3 class="title tour__title">Ascent to Hoverla</h3>
+                  <p class="tours__paragraph">From UAH 4,499/person</p>
+                  <button type="button" class="button tour__button">More details</button>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper__navigation">
+              <button type="button" class="swiper-button-prev">
+                <svg width="28" height="28">
+                  <use href="./images/sprite.svg#prev"></use>
+                </svg>
+              </button>
 
-              <h3>Week in Carpathians</h3>
-              <p>From UAH 9,999/person</p>
-              <button type="button">More details</button>
-            </li>
-            <li>
-              <picture>
-                <source
-                  media="(max-width:767px )"
-                  srcset="./images/overlay1_m_1x.jpg 1x, ./images/overlay1_m_2x.jpg 2x"
-                  type="image/jpg"
-                />
-                <source media="(min-width:768px )" srcset="" type="image/jpg" />
-                <source media="(min-width:1440px )" srcset="" type="image/jpg" />
-                <img
-                  src="./images/overlay1_m_1x.jpg 1x, ./images/overlay1_m_2x.jpg 2x"
-                  alt="Bukovel"
-                />
-              </picture>
-
-              <h3>Ski tour to Bukovel</h3>
-              <p>From UAH 7,499/person</p>
-              <button type="button">More details</button>
-            </li>
-            <li>
-              <picture>
-                <source
-                  media="(max-width:767px )"
-                  srcset="./images/overlay2_m_1x.jpg 1x, ./images/overlay2_m_2x.jpg 2x"
-                  type="image/jpg"
-                />
-                <source media="(min-width:768px )" srcset="" type="image/jpg" />
-                <source media="(min-width:1440px )" srcset="" type="image/jpg" />
-                <img
-                  src="./images/overlay2_m_1x.jpg 1x, ./images/overlay2_m_2x.jpg 2x"
-                  alt="Carpathians"
-                />
-              </picture>
-
-              <h3>Ascent to Hoverla</h3>
-              <p>From UAH 4,499/person</p>
-              <button type="button">More details</button>
-            </li>
-          </ul>
+              <button type="button" class="swiper-button-next">
+                <svg width="28" height="28">
+                  <use href="./images/sprite.svg#next"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="reviews">

@@ -1,0 +1,30 @@
+.tours__item {
+  border: 1px solid $accentColor;
+}
+
+.swiper-wrapper > .swiper-slide {
+  width: fit-content;
+}
+.tours__wrapper {
+  padding: 28px 20px;
+}
+
+.tours__paragraph {
+  margin-bottom: 20px;
+}
+
+.swiper__navigation {
+  @include flex(flex, center, center);
+  gap: 40px;
+  margin-top: 24px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  fill: $accentColor;
+}
+
+.swiper-button-disabled,
+.swiper-button-disabled {
+  fill: $inactiveColor;
+}
