@@ -1,0 +1,16 @@
+.swiper__navigation {
+  @include flex(flex, center, center);
+  gap: 40px;
+  margin-top: 24px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  fill: $accentColor;
+}
+
+.swiper-button-disabled,
+.swiper-button-disabled {
+  fill: $inactiveColor;
+  pointer-events: none;
+}

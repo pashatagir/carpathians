@@ -22,6 +22,11 @@
   padding-inline: 30px;
 }
 
-.tours .container {
+.tours .container,
+.gallery .container {
   padding-inline: 0;
+}
+
+.footer .container {
+  padding-inline: 44px;
 }

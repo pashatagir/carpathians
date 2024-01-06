@@ -5,6 +5,7 @@ button {
   background-color: transparent;
   @include flex(flex, center, center);
   color: $bgColor;
+  cursor: pointer;
 }
 
 .button {
@@ -21,7 +22,8 @@ button {
   }
 }
 
-.tour__button {
+.tour__button,
+.questions__button {
   padding-inline: 0;
   width: 100%;
 }
