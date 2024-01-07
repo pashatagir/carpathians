@@ -7,7 +7,7 @@
     <title>Carpathian</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <nav class="navigation header__navigation">
           <a href="#header" class="link"
@@ -25,57 +25,59 @@
           </button>
         </nav>
       </div>
-      <div class="mobile-menu">
-        <nav class="navigation mobile-menu__navigation">
-          <a href="#about-us" class="link mobile-menu__link">About us</a
-          ><a href="#tours" class="link mobile-menu__link">Tours</a
-          ><a href="#reviews" class="link mobile-menu__link">Reviews</a
-          ><a href="#gallery" class="link mobile-menu__link">Gallery</a
-          ><a href="#contacts" class="link mobile-menu__link">Contacts</a>
-        </nav>
-        <ul class="social-list mobile-menu__social-list">
-          <li>
-            <a
-              href="https://web.telegram.org/"
-              class="link mobile-menu__link"
-              target="_blank"
-              rel="noopener noreferrer nofollov"
-            >
-              <svg width="40" height="40">
-                <use href="./images/sprite.svg#telegram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/"
-              class="link mobile-menu__link"
-              target="_blank"
-              rel="noopener noreferrer nofollov"
-            >
-              <svg width="40" height="40">
-                <use href="./images/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/?locale=uk_UA"
-              class="link mobile-menu__link"
-              target="_blank"
-              rel="noopener noreferrer nofollov"
-            >
-              <svg width="40" height="40">
-                <use href="./images/sprite.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+      <div class="container">
+        <div class="mobile-menu">
+          <nav class="navigation mobile-menu__navigation">
+            <a href="#about-us" class="link mobile-menu__link">About us</a
+            ><a href="#tours" class="link mobile-menu__link">Tours</a
+            ><a href="#reviews" class="link mobile-menu__link">Reviews</a
+            ><a href="#gallery" class="link mobile-menu__link">Gallery</a
+            ><a href="#contacts" class="link mobile-menu__link">Contacts</a>
+          </nav>
+          <ul class="social-list mobile-menu__social-list">
+            <li>
+              <a
+                href="https://web.telegram.org/"
+                class="link mobile-menu__link"
+                target="_blank"
+                rel="noopener noreferrer nofollov"
+              >
+                <svg width="40" height="40">
+                  <use href="./images/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                class="link mobile-menu__link"
+                target="_blank"
+                rel="noopener noreferrer nofollov"
+              >
+                <svg width="40" height="40">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/?locale=uk_UA"
+                class="link mobile-menu__link"
+                target="_blank"
+                rel="noopener noreferrer nofollov"
+              >
+                <svg width="40" height="40">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
-      <section class="hero" id="header">
-        <div class="container">
+      <section class="hero">
+        <div class="container hero__container">
           <h1 class="title hero__title">TOURS TO THE CARPATHIANS FROM LVIV</h1>
           <p class="hero__paragraph">
             Journeys to the very heart of the Carpathians for those who want a real reboot
