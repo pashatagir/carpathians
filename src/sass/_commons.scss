@@ -4,6 +4,7 @@ body {
   background-color: $bgColor;
   font-family: $fontFamily;
   font-weight: $mainFontWeight;
+  scroll-behavior: smooth;
 }
 
 a,
@@ -36,7 +37,22 @@ svg {
   display: block;
 }
 
+.navigation {
+  @include font($secondFontWeight, 28px, normal, null);
+  color: $bgColor;
+}
+
 .about__paragraph {
   color: $secondBlackColor;
   @include font($secondFontWeight, 16px, normal, null);
+}
+
+.social-list {
+  display: flex;
+  gap: 32px;
+}
+
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
 }

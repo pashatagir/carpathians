@@ -1,7 +1,10 @@
 .footer {
-  background-color: $secondBlackColor;
   color: $bgColor;
-  padding: 40px 0px;
+
+  & > .container {
+    background-color: $secondBlackColor;
+    padding: 40px 44px;
+  }
 
   &__address {
     display: flex;
@@ -13,11 +16,14 @@
   &__link {
     @include flex(flex, flex-start, center);
     gap: 4px;
+    font-style: normal;
+    @include font($secondFontWeight, 4.3vw, normal, null);
+    @include mq(afterMobile) {
+      @include font($secondFontWeight, 16px, normal, null);
+    }
   }
 
   &__social-list {
-    @include flex(flex, flex-start, center);
-    gap: 32px;
     margin-bottom: 43px;
   }
 }

@@ -29,3 +29,29 @@
     color: $bgColor;
   }
 }
+
+.mobile-menu {
+  position: absolute;
+  top: -20px;
+  width: 233px;
+  height: 100vh;
+  padding: 132px 0 0 32px;
+  background-color: rgba(32, 35, 33, 0.7);
+  transform: translateX(-233px);
+  transition: transform $duration $function;
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 64px;
+  }
+
+  &__social-list {
+    flex-direction: column;
+  }
+}
+
+.is-open {
+  transform: translateX(0);
+}

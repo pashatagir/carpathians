@@ -9,16 +9,68 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="header__navigation">
-          <a href="#header"
+        <nav class="navigation header__navigation">
+          <a href="#header" class="link"
             ><svg width="40" height="40">
               <use href="./images/sprite.svg#logo"></use></svg></a
-          ><button type="button">
+          ><button type="button" class="header__button">
             <svg width="40" height="40">
               <use href="./images/sprite.svg#menu"></use>
             </svg>
           </button>
+          <button type="button" class="header__button hidden">
+            <svg width="40" height="40">
+              <use href="./images/sprite.svg#close"></use>
+            </svg>
+          </button>
         </nav>
+      </div>
+      <div class="mobile-menu">
+        <nav class="navigation mobile-menu__navigation">
+          <a href="#about-us" class="link mobile-menu__link">About us</a
+          ><a href="#tours" class="link mobile-menu__link">Tours</a
+          ><a href="#reviews" class="link mobile-menu__link">Reviews</a
+          ><a href="#gallery" class="link mobile-menu__link">Gallery</a
+          ><a href="#contacts" class="link mobile-menu__link">Contacts</a>
+        </nav>
+        <ul class="social-list mobile-menu__social-list">
+          <li>
+            <a
+              href="https://web.telegram.org/"
+              class="link mobile-menu__link"
+              target="_blank"
+              rel="noopener noreferrer nofollov"
+            >
+              <svg width="40" height="40">
+                <use href="./images/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              class="link mobile-menu__link"
+              target="_blank"
+              rel="noopener noreferrer nofollov"
+            >
+              <svg width="40" height="40">
+                <use href="./images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/?locale=uk_UA"
+              class="link mobile-menu__link"
+              target="_blank"
+              rel="noopener noreferrer nofollov"
+            >
+              <svg width="40" height="40">
+                <use href="./images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -31,7 +83,7 @@
           <button type="button" class="button hero__button">Book a tour</button>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about-us">
         <div class="container">
           <h2 class="title about__title">About us</h2>
           <p class="about__paragraph">
@@ -88,7 +140,7 @@
           </ul>
         </div>
       </section>
-      <section class="tours">
+      <section class="tours" id="tours">
         <h2 class="title tours__title">Upcoming tours</h2>
         <div class="container">
           <div class="swiper">
@@ -194,7 +246,7 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="container">
           <h2 class="title reviews__title">Reviews</h2>
           <ul>
@@ -329,7 +381,7 @@
           </ul>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <div class="container">
           <h2 class="title gallery__title">Gallery</h2>
           <div class="swiper">
