@@ -29,3 +29,7 @@ h3.tour__title {
 .footer__title {
   color: $bgColor;
 }
+
+.modal-window__title {
+  @include font($secondFontWeight, 24px, normal, null);
+}

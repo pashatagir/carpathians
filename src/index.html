@@ -638,5 +638,70 @@
         <small class="copyright">&#169; Created by LelekaSoft</small>
       </div>
     </footer>
+    <a href="#header" class="to-top">
+      <svg width="32" height="32">
+        <use href="./images/sprite.svg#next"></use>
+      </svg>
+    </a>
+    <div class="modal-window">
+      <div class="container modal-window__container">
+        <button type="button" class="header__button hidden">
+          <svg width="40" height="40">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <h3 class="title modal-window__title">Book a tour</h3>
+        <p class="questions__paragraph">
+          You can leave your questions here and our manager will call you back within 10 minutes
+        </p>
+        <form action="" class="form callme__form">
+          <input
+            class="form__input"
+            type="text"
+            name="username"
+            placeholder="Your name*"
+            minlength="2"
+            required
+          />
+          <input
+            class="form__input"
+            type="tel"
+            name="phone"
+            placeholder="Phone number*"
+            pattern="^\+380\d{2}([\s\-]?)\d{3}([\s\-]?)\d{2}([\s\-]?)\d{2}$"
+            required
+          />
+
+          <label class="callme__form__label">
+            <input
+              class="callme__form__check"
+              type="checkbox"
+              name="tour"
+              value="Hoverla"
+              checked
+            /><svg class="check__icon" width="20" height="20">
+              <use href="./images/sprite.svg#checkmark"></use>
+            </svg>
+            Ascent to Hoverla
+          </label>
+          <label class="callme__form__label">
+            <input class="callme__form__check" type="checkbox" name="tour" value="Bukovel" />
+            <svg class="check__icon" width="20" height="20">
+              <use href="./images/sprite.svg#checkmark"></use>
+            </svg>
+            Ski tour to Bukovel
+          </label>
+          <label class="callme__form__label">
+            <input class="callme__form__check" type="checkbox" name="tour" value="Carpathians" />
+            <svg class="check__icon" width="20" height="20">
+              <use href="./images/sprite.svg#checkmark"></use>
+            </svg>
+            Week in Carpathians
+          </label>
+
+          <button type="submit" class="button questions__button">Call me</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

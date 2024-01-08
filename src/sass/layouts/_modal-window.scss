@@ -1,0 +1,54 @@
+.modal-window {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(32, 35, 33, 0.5);
+  top: 0;
+  padding: 140px 0px 143px;
+  transform: translateY(-100%);
+  transition: transform $duration $function;
+
+  &__container {
+    background-color: $bgColor;
+    padding: 52px null 36px;
+  }
+}
+
+.callme__form {
+  display: flex;
+  flex-direction: column;
+  &__label {
+    position: relative;
+    margin-bottom: 28px;
+    @include flex(flex, start, center);
+    gap: 33px;
+  }
+  &__check::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-color: $bgColor;
+    border: 1px solid;
+  }
+
+  &__check:checked + .check__icon {
+    stroke: $secondBlackColor;
+  }
+}
+
+.check__icon {
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  stroke: $bgColor;
+  fill: $bgColor;
+  transition: stroke $duration $function;
+}
+
+.open-window {
+  transform: translateY(0%);
+}

@@ -19,3 +19,9 @@ menuLinksEl.forEach(item =>
     toggleMenu();
   })
 );
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+document.querySelector('.hero__button').addEventListener('click', e => {
+  document.querySelector('.modal-window').classList.toggle('open-window');
+  document.body.classList.toggle('no-scroll');
+});

@@ -55,3 +55,31 @@ svg {
 .no-scroll {
   overflow: hidden;
 }
+
+.to-top {
+  @include flex(none, center, center);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid $accentColor;
+  fill: $accentColor;
+
+  position: fixed;
+  z-index: 2;
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(-90deg);
+  @include mq(tablet) {
+    bottom: 15px;
+    right: 15px;
+  }
+  @include mq(desktop) {
+    bottom: 20px;
+    right: 20px;
+  }
+  &:focus,
+  &:hover {
+    fill: $bgColor;
+    border-color: $bgColor;
+  }
+}
