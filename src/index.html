@@ -82,7 +82,7 @@
           <p class="hero__paragraph">
             Journeys to the very heart of the Carpathians for those who want a real reboot
           </p>
-          <button type="button" class="button hero__button">Book a tour</button>
+          <button type="button" class="button hero__button" id="js-open-modal">Book a tour</button>
         </div>
       </section>
       <section class="about" id="about-us">
@@ -643,9 +643,9 @@
         <use href="./images/sprite.svg#next"></use>
       </svg>
     </a>
-    <div class="modal-window">
-      <div class="container modal-window__container">
-        <button type="button" class="header__button hidden">
+    <div class="backdrop backdrop--padding" id="js-backdrop">
+      <div class="modal-window" id="js-call-me">
+        <button type="button" class="modal-window__button" id="js-close-modal">
           <svg width="40" height="40">
             <use href="./images/sprite.svg#close"></use>
           </svg>

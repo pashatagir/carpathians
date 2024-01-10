@@ -83,3 +83,7 @@ svg {
     border-color: $bgColor;
   }
 }
+
+.disabled {
+  pointer-events: none;
+}
