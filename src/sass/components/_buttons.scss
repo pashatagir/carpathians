@@ -6,6 +6,7 @@ button {
   @include flex(flex, center, center);
   color: $bgColor;
   cursor: pointer;
+  transition: color, background-color, fill, stroke, border-color, $duration $function;
 }
 
 .button {
@@ -22,8 +23,23 @@ button {
   }
 }
 
+.header__button {
+  stroke: $bgColor;
+  &:focus,
+  &:hover {
+    stroke: $accentColor;
+  }
+}
+
 .tour__button,
 .questions__button {
   padding-inline: 0;
   width: 100%;
+}
+
+.modal__call-me__button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  stroke: $secondBlackColor;
 }

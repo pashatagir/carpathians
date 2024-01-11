@@ -6,8 +6,8 @@ const heroContainerEl = document.querySelector('.hero__container');
 const toggleMenu = () => {
   menuEl.classList.toggle('is-open');
   document.body.classList.toggle('no-scroll');
-  heroContainerEl.classList.toggle('hidden');
-  [menuButtonEl[0], menuButtonEl[1]].forEach(button => button.classList.toggle('hidden'));
+  heroContainerEl.classList.toggle('visually-hidden');
+  [menuButtonEl[0], menuButtonEl[1]].forEach(button => button.classList.toggle('visually-hidden'));
   menuLinksEl[0].style.zIndex = document.body.classList.contains('no-scroll') ? 1 : '';
 };
 

@@ -20,25 +20,29 @@
   }
 }
 
-.modal-window {
+.modal {
   position: absolute;
   background-color: $bgColor;
-  padding: 52px null 36px;
-  transform: translateY(-100%);
   transition: transform $duration $function;
-  &.open {
-    transform: translateY(0%);
+
+  &__call-me {
+    padding: 52px null 36px;
+    transform: translateY(-100%);
+
+    &.open {
+      transform: translateY(0%);
+    }
+  }
+
+  &__tour-details {
+    transform: translateX(-100%);
+    &.open {
+      transform: translateX(0%);
+    }
   }
 }
 
-.modal-window__button {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  stroke: $secondBlackColor;
-}
-
-.callme__form {
+.call-me__form {
   display: flex;
   flex-direction: column;
   &__label {

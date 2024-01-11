@@ -4,6 +4,7 @@
   @include font($secondFontWeight, 32px, normal, null);
   margin-bottom: 28px;
 }
+
 .hero__title {
   color: $bgColor;
   @include font($secondFontWeight, null, normal, null);
@@ -20,7 +21,7 @@
   margin-bottom: 20px;
 }
 
-h3.tour__title {
+.tour__title {
   text-align: left;
   @include font($thirdFontWeight, 20px, normal, null);
   margin-bottom: 16px;
@@ -30,6 +31,6 @@ h3.tour__title {
   color: $bgColor;
 }
 
-.modal-window__title {
+.modal-call-me__title {
   @include font($secondFontWeight, 24px, normal, null);
 }
