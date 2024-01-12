@@ -8,9 +8,9 @@
   background-color: rgba(32, 35, 33, 0.5);
   top: 0;
   left: 0;
+  margin-inline: auto;
   &--padding {
     padding: 140px 0px 143px;
-    margin-inline: auto;
   }
 
   &.active {
@@ -28,15 +28,13 @@
   &__call-me {
     padding: 52px null 36px;
     transform: translateY(-100%);
-
-    &.open {
-      transform: translateY(0%);
-    }
   }
 
   &__tour-details {
     transform: translateX(-100%);
+    z-index: 2;
     &.open {
+      height: 100vh;
       transform: translateX(0%);
     }
   }

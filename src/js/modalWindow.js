@@ -1,20 +1,16 @@
-const openModalBtn = document.getElementById('js-open-modal');
-const modalWindowEl = document.getElementById('js-call-me');
+const openModalBtn = document.querySelectorAll('#js-open-modal');
+const modalWindowEl = document.querySelectorAll('#js-modal-window');
 const backDropEl = document.getElementById('js-backdrop');
-const closeModalBtn = document.getElementById('js-close-modal');
-
-function openModal() {
-  modalWindowEl.classList.add('open');
-  document.body.classList.add('no-scroll');
-  backDropEl.classList.add('active');
-  openModalBtn.classList.add('disabled');
-}
+const closeModalBtn = document.querySelectorAll('#js-close-modal');
+const sectionToursEl = document.querySelector('.tours');
 
 function closeModal() {
-  modalWindowEl.classList.remove('open');
+  modalWindowEl[0].style.transform = 'translateY(-100%)';
+  modalWindowEl[1].classList.remove('open');
+  sectionToursEl.style.display = 'block';
+  openModalBtn.forEach(btn => btn.classList.remove('disabled'));
   document.body.classList.remove('no-scroll');
-  backDropEl.classList.remove('active');
-  openModalBtn.classList.remove('disabled');
+  backDropEl.classList.remove('active', 'backdrop--padding');
 }
 
 function onEscPress(e) {
@@ -24,8 +20,23 @@ function onEscPress(e) {
   closeModal();
 }
 
-openModalBtn.addEventListener('click', openModal);
+openModalBtn.forEach(item =>
+  item.addEventListener('click', e => {
+    if (e.target.classList.contains('hero__button')) {
+      modalWindowEl[0].style.transform = 'translateY(0%)';
+      openModalBtn.forEach(btn => btn.classList.add('disabled'));
+      document.body.classList.add('no-scroll');
+      backDropEl.classList.add('active', 'backdrop--padding');
+    } else {
+      modalWindowEl[1].classList.add('open');
+      sectionToursEl.style.display = 'none';
+      openModalBtn.forEach(btn => btn.classList.add('disabled'));
+      document.body.classList.add('no-scroll');
+      backDropEl.classList.add('active');
+    }
+  })
+);
 
-closeModalBtn.addEventListener('click', closeModal);
+closeModalBtn.forEach(item => item.addEventListener('click', closeModal));
 
 document.addEventListener('keydown', onEscPress);

@@ -170,7 +170,9 @@
                 <div class="tours__wrapper">
                   <h3 class="title tour__title">Week in Carpathians</h3>
                   <p class="tours__paragraph">From UAH 9,999/person</p>
-                  <button type="button" class="button tour__button">More details</button>
+                  <button type="button" class="button tour__button" id="js-open-modal">
+                    More details
+                  </button>
                 </div>
               </li>
               <li class="tours__item swiper-slide">
@@ -198,7 +200,9 @@
                 <div class="tours__wrapper">
                   <h3 class="title tour__title">Ski tour to Bukovel</h3>
                   <p class="tours__paragraph">From UAH 7,499/person</p>
-                  <button type="button" class="button tour__button">More details</button>
+                  <button type="button" class="button tour__button" id="js-open-modal">
+                    More details
+                  </button>
                 </div>
               </li>
               <li class="tours__item swiper-slide">
@@ -226,7 +230,9 @@
                 <div class="tours__wrapper">
                   <h3 class="title tour__title">Ascent to Hoverla</h3>
                   <p class="tours__paragraph">From UAH 4,499/person</p>
-                  <button type="button" class="button tour__button">More details</button>
+                  <button type="button" class="button tour__button" id="js-open-modal">
+                    More details
+                  </button>
                 </div>
               </li>
             </ul>
@@ -641,8 +647,8 @@
         <use href="./images/sprite.svg#next"></use>
       </svg>
     </a>
-    <div class="backdrop backdrop--padding" id="js-backdrop">
-      <div class="modal modal__call-me" id="js-call-me">
+    <div class="backdrop" id="js-backdrop">
+      <div class="modal modal__call-me" id="js-modal-window">
         <button type="button" class="modal__call-me__button" id="js-close-modal">
           <svg width="40" height="40">
             <use href="./images/sprite.svg#close"></use>
@@ -700,73 +706,72 @@
           <button type="submit" class="button questions__button">Call me</button>
         </form>
       </div>
-      <div class="modal tour-details modal__tour-details">
-        <div class="container">
-          <h2 class="visually-hidden">Tour details</h2>
-          <div class="swiper">
-            <ul class="tour-details__list swiper-wrapper">
-              <li class="swiper-slide">
-                <div class="bg-container">
-                  <button type="button" class="modal__call-me__button" id="js-close-modal">
-                    <svg width="40" height="40">
-                      <use href="./images/sprite.svg#close"></use>
-                    </svg>
-                  </button>
-                  <h3>Ascent to Hoverla</h3>
-                  <h4>1 day</h4>
-                  <ul class="schedule-list">
-                    <li>Departure from Lviv</li>
-                    <li>Manyava Hermitage</li>
-                    <li>Manyava waterfall</li>
-                    <li>Arrival to Bukovel</li>
-                    <li>Check-in</li>
-                    <li>Dinner</li>
-                    <li>Evening by the fireplace</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <div class="bg-container">
-                  <button type="button" class="modal__call-me__button" id="js-close-modal">
-                    <svg width="40" height="40">
-                      <use href="./images/sprite.svg#close"></use>
-                    </svg>
-                  </button>
-                  <h3>Ascent to Hoverla</h3>
-                  <h4>2 day</h4>
-                  <ul class="schedule-list">
-                    <li>Breakfast</li>
-                    <li>Ascent to Hoverla</li>
-                    <li>Dinner</li>
-                    <li>Reacretion</li>
-                    <li>Sauna</li>
-                    <li>Dinner</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <div class="bg-container">
-                  <button type="button" class="modal__call-me__button" id="js-close-modal">
-                    <svg width="40" height="40">
-                      <use href="./images/sprite.svg#close"></use>
-                    </svg>
-                  </button>
-                  <h3>Ascent to Hoverla</h3>
-                  <h4>3 day</h4>
-                  <ul class="schedule-list">
-                    <li>Breakfast</li>
-                    <li>A walk around Bukovel</li>
-                    <li>Check out from the hotel</li>
-                    <li>Yaremche</li>
-                    <li>Arrival in Lviv</li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-            <div class="swiper-pagination"></div>
-          </div>
-          <button type="button" class="button tour__button">Book a tour</button>
+
+      <div class="modal tour-details modal__tour-details" id="js-modal-window">
+        <h2 class="visually-hidden">Tour details</h2>
+        <div class="swiper">
+          <ul class="tour-details__list swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="bg-container">
+                <button type="button" class="modal__call-me__button" id="js-close-modal">
+                  <svg width="40" height="40">
+                    <use href="./images/sprite.svg#close"></use>
+                  </svg>
+                </button>
+                <h3>Ascent to Hoverla</h3>
+                <h4>1 day</h4>
+                <ul class="schedule-list">
+                  <li>Departure from Lviv</li>
+                  <li>Manyava Hermitage</li>
+                  <li>Manyava waterfall</li>
+                  <li>Arrival to Bukovel</li>
+                  <li>Check-in</li>
+                  <li>Dinner</li>
+                  <li>Evening by the fireplace</li>
+                </ul>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="bg-container">
+                <button type="button" class="modal__call-me__button" id="js-close-modal">
+                  <svg width="40" height="40">
+                    <use href="./images/sprite.svg#close"></use>
+                  </svg>
+                </button>
+                <h3>Ascent to Hoverla</h3>
+                <h4>2 day</h4>
+                <ul class="schedule-list">
+                  <li>Breakfast</li>
+                  <li>Ascent to Hoverla</li>
+                  <li>Dinner</li>
+                  <li>Reacretion</li>
+                  <li>Sauna</li>
+                  <li>Dinner</li>
+                </ul>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="bg-container">
+                <button type="button" class="modal__call-me__button" id="js-close-modal">
+                  <svg width="40" height="40">
+                    <use href="./images/sprite.svg#close"></use>
+                  </svg>
+                </button>
+                <h3>Ascent to Hoverla</h3>
+                <h4>3 day</h4>
+                <ul class="schedule-list">
+                  <li>Breakfast</li>
+                  <li>A walk around Bukovel</li>
+                  <li>Check out from the hotel</li>
+                  <li>Yaremche</li>
+                  <li>Arrival in Lviv</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
         </div>
+        <button type="button" class="button">Book a tour</button>
       </div>
     </div>
   </body>
