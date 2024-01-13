@@ -43,3 +43,11 @@ button {
   right: 12px;
   stroke: $secondBlackColor;
 }
+
+.modal__button {
+  position: absolute;
+  top: 12px;
+  right: 42px;
+  stroke: $bgColor;
+  z-index: 2;
+}

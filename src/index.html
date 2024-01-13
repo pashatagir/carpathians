@@ -143,7 +143,7 @@
       <section class="tours" id="tours">
         <h2 class="title tours__title">Upcoming tours</h2>
         <div class="container">
-          <div class="swiper">
+          <div class="swiper swiper__gallery">
             <ul class="tours__list swiper-wrapper">
               <li class="tours__item swiper-slide">
                 <picture class="tours__image">
@@ -390,7 +390,7 @@
       <section class="gallery" id="gallery">
         <div class="container">
           <h2 class="title gallery__title">Gallery</h2>
-          <div class="swiper">
+          <div class="swiper swiper__gallery">
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
                 <picture>
@@ -707,71 +707,62 @@
         </form>
       </div>
 
-      <div class="modal tour-details modal__tour-details" id="js-modal-window">
+      <div class="modal modal__tour" id="js-modal-window">
+        <button type="button" class="modal__button" id="js-close-modal">
+          <svg width="30" height="30">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <h3 class="modal__tour__title">Ascent to Hoverla</h3>
         <h2 class="visually-hidden">Tour details</h2>
-        <div class="swiper">
-          <ul class="tour-details__list swiper-wrapper">
-            <li class="swiper-slide">
-              <div class="bg-container">
-                <button type="button" class="modal__call-me__button" id="js-close-modal">
-                  <svg width="40" height="40">
-                    <use href="./images/sprite.svg#close"></use>
-                  </svg>
-                </button>
-                <h3>Ascent to Hoverla</h3>
-                <h4>1 day</h4>
-                <ul class="schedule-list">
-                  <li>Departure from Lviv</li>
-                  <li>Manyava Hermitage</li>
-                  <li>Manyava waterfall</li>
-                  <li>Arrival to Bukovel</li>
-                  <li>Check-in</li>
-                  <li>Dinner</li>
-                  <li>Evening by the fireplace</li>
-                </ul>
+        <div class="swiper__modal">
+          <ul class="modal__tour__list swiper-wrapper">
+            <li class="modal__tour__item swiper-slide">
+              <div class="wrapper-title">
+                <h4 class="title-day">1 day</h4>
               </div>
+              <ul class="schedule__list">
+                <li class="schedule__item">Departure from Lviv</li>
+                <li class="schedule__item">Manyava Hermitage</li>
+                <li class="schedule__item">Manyava waterfall</li>
+                <li class="schedule__item">Arrival to Bukovel</li>
+                <li class="schedule__item">Check-in</li>
+                <li class="schedule__item">Dinner</li>
+                <li class="schedule__item">Evening by the fireplace</li>
+              </ul>
             </li>
-            <li class="swiper-slide">
-              <div class="bg-container">
-                <button type="button" class="modal__call-me__button" id="js-close-modal">
-                  <svg width="40" height="40">
-                    <use href="./images/sprite.svg#close"></use>
-                  </svg>
-                </button>
-                <h3>Ascent to Hoverla</h3>
-                <h4>2 day</h4>
-                <ul class="schedule-list">
-                  <li>Breakfast</li>
-                  <li>Ascent to Hoverla</li>
-                  <li>Dinner</li>
-                  <li>Reacretion</li>
-                  <li>Sauna</li>
-                  <li>Dinner</li>
-                </ul>
+            <li class="modal__tour__item swiper-slide">
+              <div class="wrapper-title">
+                <h4 class="title-day">2 day</h4>
               </div>
+              <ul class="schedule__list">
+                <li class="schedule__item">Breakfast</li>
+                <li class="schedule__item">Ascent to Hoverla</li>
+                <li class="schedule__item">Dinner</li>
+                <li class="schedule__item">Reacretion</li>
+                <li class="schedule__item">Sauna</li>
+                <li class="schedule__item">Dinner</li>
+              </ul>
             </li>
-            <li class="swiper-slide">
-              <div class="bg-container">
-                <button type="button" class="modal__call-me__button" id="js-close-modal">
-                  <svg width="40" height="40">
-                    <use href="./images/sprite.svg#close"></use>
-                  </svg>
-                </button>
-                <h3>Ascent to Hoverla</h3>
-                <h4>3 day</h4>
-                <ul class="schedule-list">
-                  <li>Breakfast</li>
-                  <li>A walk around Bukovel</li>
-                  <li>Check out from the hotel</li>
-                  <li>Yaremche</li>
-                  <li>Arrival in Lviv</li>
-                </ul>
+            <li class="modal__tour__item swiper-slide">
+              <div class="wrapper-title">
+                <h4 class="title-day">3 day</h4>
               </div>
+              <ul class="schedule__list">
+                <li class="schedule__item">Breakfast</li>
+                <li class="schedule__item">A walk around Bukovel</li>
+                <li class="schedule__item">Check out from the hotel</li>
+                <li class="schedule__item">Yaremche</li>
+                <li class="schedule__item">Arrival in Lviv</li>
+              </ul>
             </li>
           </ul>
           <div class="swiper-pagination"></div>
         </div>
-        <button type="button" class="button">Book a tour</button>
+        <div class="wrapper">
+          <p class="tour-price">UAH 4,499/person</p>
+          <button type="button" class="button modal__tour__button">Book a tour</button>
+        </div>
       </div>
     </div>
   </body>

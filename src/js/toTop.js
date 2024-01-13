@@ -12,8 +12,7 @@ anchorEl.forEach(anchor => {
 });
 
 window.addEventListener('scroll', () => {
-  let y = window.scrollY;
-  if (y < 1000 || document.body.classList.contains('no-scroll')) {
+  if (window.scrollY < 1000) {
     backHomeEl.style.display = 'none';
   } else {
     backHomeEl.style.display = 'flex';

@@ -30,11 +30,18 @@
     transform: translateY(-100%);
   }
 
-  &__tour-details {
+  &__tour {
+    padding: 0px 30px 28px;
     transform: translateX(-100%);
-    z-index: 2;
+    @include flex(none, space-between, null);
+    flex-direction: column;
+    gap: 28px;
+    height: 100vh;
+    width: 100%;
+    color: $bgColor;
+
     &.open {
-      height: 100vh;
+      display: flex;
       transform: translateX(0%);
     }
   }
@@ -73,4 +80,86 @@
   stroke: $bgColor;
   fill: $bgColor;
   transition: stroke $duration $function;
+}
+
+.modal__tour__list {
+  height: 100%;
+}
+
+.modal__tour__item {
+  padding-top: 90px;
+  height: 100%;
+}
+
+.modal__tour__item:nth-child(1) {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url(/src/images/hoverla1_1x.jpg) no-repeat top center;
+  background-size: cover;
+  @include mq(retina) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+      url(/src/images/hoverla1_2x.jpg) no-repeat top center;
+    background-size: cover;
+  }
+}
+
+.modal__tour__item:nth-child(2) {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url(/src/images/hoverla2_1x.jpg) no-repeat top center;
+  background-size: cover;
+  @include mq(retina) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+      url(/src/images/hoverla2_2x.jpg) no-repeat top center;
+    background-size: cover;
+  }
+}
+
+.modal__tour__item:nth-child(3) {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url(/src/images/hoverla3_1x.jpg) no-repeat top center;
+  background-size: cover;
+  @include mq(retina) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+      url(/src/images/hoverla3_2x.jpg) no-repeat top center;
+    background-size: cover;
+  }
+}
+
+.modal__tour__title {
+  position: absolute;
+  @include font($thirdFontWeight, 18px, null, normal);
+  top: 56px;
+  left: 78px;
+  z-index: 2;
+}
+
+.wrapper-title {
+  background-color: $accentColor;
+  margin-bottom: 12px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  margin-right: 37px;
+}
+
+.title-day {
+  padding: 14px 0px 14px 48px;
+  @include font(inherit, 16px, null, normal);
+}
+
+.schedule__list {
+  padding-left: 48px;
+  line-height: normal;
+}
+
+.schedule__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.tour-price {
+  text-align: center;
+  color: $secondBlackColor;
+  @include font($thirdFontWeight, 16px, null, normal);
+}
+
+.modal__tour__button {
+  margin-top: 16px;
 }
