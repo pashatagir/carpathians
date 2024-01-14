@@ -1,9 +1,8 @@
 // import smoothscroll from 'smoothscroll-polyfill';
+import { refs } from './refs';
+const { backHomeEl, anchorEls } = refs;
 
-const backHomeEl = document.querySelector('.to-top');
-const anchorEl = document.querySelectorAll('a[href^="#"]');
-
-anchorEl.forEach(anchor => {
+anchorEls.forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
     // smoothscroll.polyfill();

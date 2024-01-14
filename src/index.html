@@ -80,7 +80,15 @@
           <p class="hero__paragraph">
             Journeys to the very heart of the Carpathians for those who want a real reboot
           </p>
-          <button type="button" class="button hero__button" id="js-open-modal">Book a tour</button>
+          <button
+            type="button"
+            class="button hero__button"
+            id="js-open-modal"
+            data-action="call-me"
+            data-check="hoverla"
+          >
+            Book a tour
+          </button>
         </div>
       </section>
       <section class="about" id="about-us">
@@ -149,7 +157,7 @@
                 <picture class="tours__image">
                   <source
                     media="(max-width:767px )"
-                    srcset="./images/overlay_m_1x.jpg 1x, ./images/overlay_m_2x.jpg 2x"
+                    srcset="./images/overlay2_m_1x.jpg 1x, ./images/overlay2_m_2x.jpg 2x"
                     type="image/jpg"
                   />
                   <source
@@ -163,14 +171,19 @@
                     type="image/jpg"
                   />
                   <img
-                    src="./images/overlay_m_1x.jpg 1x, ./images/overlay_m_2x.jpg 2x"
-                    alt="Hoverla"
+                    src="./images/overlay2_m_1x.jpg 1x, ./images/overlay2_m_2x.jpg 2x"
+                    alt="Carpathians"
                   />
                 </picture>
                 <div class="tours__wrapper">
                   <h3 class="title tour__title">Week in Carpathians</h3>
                   <p class="tours__paragraph">From UAH 9,999/person</p>
-                  <button type="button" class="button tour__button" id="js-open-modal">
+                  <button
+                    type="button"
+                    class="button tour__button"
+                    id="js-open-modal"
+                    data-action="carpathians"
+                  >
                     More details
                   </button>
                 </div>
@@ -200,7 +213,12 @@
                 <div class="tours__wrapper">
                   <h3 class="title tour__title">Ski tour to Bukovel</h3>
                   <p class="tours__paragraph">From UAH 7,499/person</p>
-                  <button type="button" class="button tour__button" id="js-open-modal">
+                  <button
+                    type="button"
+                    class="button tour__button"
+                    id="js-open-modal"
+                    data-action="bukovel"
+                  >
                     More details
                   </button>
                 </div>
@@ -209,7 +227,7 @@
                 <picture class="tours__image">
                   <source
                     media="(max-width:767px )"
-                    srcset="./images/overlay2_m_1x.jpg 1x, ./images/overlay2_m_2x.jpg 2x"
+                    srcset="./images/overlay_m_1x.jpg 1x, ./images/overlay_m_2x.jpg 2x"
                     type="image/jpg"
                   />
                   <source
@@ -223,14 +241,19 @@
                     type="image/jpg"
                   />
                   <img
-                    src="./images/overlay2_m_1x.jpg 1x, ./images/overlay2_m_2x.jpg 2x"
-                    alt="Carpathians"
+                    src="./images/overlay_m_1x.jpg 1x, ./images/overlay_m_2x.jpg 2x"
+                    alt="Hoverla"
                   />
                 </picture>
                 <div class="tours__wrapper">
                   <h3 class="title tour__title">Ascent to Hoverla</h3>
                   <p class="tours__paragraph">From UAH 4,499/person</p>
-                  <button type="button" class="button tour__button" id="js-open-modal">
+                  <button
+                    type="button"
+                    class="button tour__button"
+                    id="js-open-modal"
+                    data-action="hoverla"
+                  >
                     More details
                   </button>
                 </div>
@@ -648,7 +671,7 @@
       </svg>
     </a>
     <div class="backdrop" id="js-backdrop">
-      <div class="modal modal__call-me" id="js-modal-window">
+      <div class="modal modal__call-me" id="js-modal-window" data-action="call-me">
         <button type="button" class="modal__call-me__button" id="js-close-modal">
           <svg width="40" height="40">
             <use href="./images/sprite.svg#close"></use>
@@ -658,7 +681,7 @@
         <p class="questions__paragraph">
           You can leave your questions here and our manager will call you back within 10 minutes
         </p>
-        <form action="" class="form call-me__form">
+        <form class="form call-me__form">
           <input
             class="form__input"
             type="text"
@@ -677,26 +700,24 @@
           />
 
           <label class="call-me__form__label">
-            <input
-              class="call-me__form__check"
-              type="checkbox"
-              name="tour"
-              value="Hoverla"
-              checked
-            /><svg class="check__icon" width="20" height="20">
+            <input class="call-me__form__check" type="checkbox" name="tour" value="hoverla" /><svg
+              class="check__icon"
+              width="20"
+              height="20"
+            >
               <use href="./images/sprite.svg#checkmark"></use>
             </svg>
             Ascent to Hoverla
           </label>
           <label class="call-me__form__label">
-            <input class="call-me__form__check" type="checkbox" name="tour" value="Bukovel" />
+            <input class="call-me__form__check" type="checkbox" name="tour" value="bukovel" />
             <svg class="check__icon" width="20" height="20">
               <use href="./images/sprite.svg#checkmark"></use>
             </svg>
             Ski tour to Bukovel
           </label>
           <label class="call-me__form__label">
-            <input class="call-me__form__check" type="checkbox" name="tour" value="Carpathians" />
+            <input class="call-me__form__check" type="checkbox" name="tour" value="carpathians" />
             <svg class="check__icon" width="20" height="20">
               <use href="./images/sprite.svg#checkmark"></use>
             </svg>
@@ -706,18 +727,18 @@
           <button type="submit" class="button questions__button">Call me</button>
         </form>
       </div>
-
-      <div class="modal modal__tour" id="js-modal-window">
+      <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!modal-tour-hoverla!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+      <div class="modal modal__tour" id="js-modal-window" data-action="hoverla">
         <button type="button" class="modal__button" id="js-close-modal">
           <svg width="30" height="30">
             <use href="./images/sprite.svg#close"></use>
           </svg>
         </button>
-        <h3 class="modal__tour__title">Ascent to Hoverla</h3>
         <h2 class="visually-hidden">Tour details</h2>
+        <h3 class="modal__tour__title">Ascent to Hoverla</h3>
         <div class="swiper__modal">
           <ul class="modal__tour__list swiper-wrapper">
-            <li class="modal__tour__item swiper-slide">
+            <li class="modal__tour__item swiper-slide modal__tour__item--hoverla">
               <div class="wrapper-title">
                 <h4 class="title-day">1 day</h4>
               </div>
@@ -731,7 +752,7 @@
                 <li class="schedule__item">Evening by the fireplace</li>
               </ul>
             </li>
-            <li class="modal__tour__item swiper-slide">
+            <li class="modal__tour__item swiper-slide modal__tour__item--hoverla">
               <div class="wrapper-title">
                 <h4 class="title-day">2 day</h4>
               </div>
@@ -744,7 +765,7 @@
                 <li class="schedule__item">Dinner</li>
               </ul>
             </li>
-            <li class="modal__tour__item swiper-slide">
+            <li class="modal__tour__item swiper-slide modal__tour__item--hoverla">
               <div class="wrapper-title">
                 <h4 class="title-day">3 day</h4>
               </div>
@@ -761,7 +782,207 @@
         </div>
         <div class="wrapper">
           <p class="tour-price">UAH 4,499/person</p>
-          <button type="button" class="button modal__tour__button">Book a tour</button>
+          <button
+            type="button"
+            class="button modal__tour__button"
+            id="js-open-modal"
+            data-action="call-me"
+            data-check="hoverla"
+          >
+            Book a tour
+          </button>
+        </div>
+      </div>
+      <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!modal-tour-bukovel!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+      <div class="modal modal__tour" id="js-modal-window" data-action="bukovel">
+        <button type="button" class="modal__button" id="js-close-modal">
+          <svg width="30" height="30">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <h2 class="visually-hidden">Tour details</h2>
+        <h3 class="modal__tour__title">Ski tour to Bukovel</h3>
+        <div class="swiper__modal">
+          <ul class="modal__tour__list swiper-wrapper">
+            <li class="modal__tour__item swiper-slide modal__tour__item--bukovel">
+              <div class="wrapper-title">
+                <h4 class="title-day">1 day</h4>
+              </div>
+              <ul class="schedule__list">
+                <li class="schedule__item">Departure from Lviv</li>
+                <li class="schedule__item">Manyava Hermitage</li>
+                <li class="schedule__item">Manyava waterfall</li>
+                <li class="schedule__item">Arrival to Bukovel</li>
+                <li class="schedule__item">Check-in</li>
+                <li class="schedule__item">Dinner</li>
+                <li class="schedule__item">Evening by the fireplace</li>
+              </ul>
+            </li>
+            <li class="modal__tour__item swiper-slide modal__tour__item--bukovel">
+              <div class="wrapper-title">
+                <h4 class="title-day">2 day</h4>
+              </div>
+              <ul class="schedule__list">
+                <li class="schedule__item">Breakfast</li>
+                <li class="schedule__item">Recreation</li>
+                <li class="schedule__item">Lunch</li>
+                <li class="schedule__item">Reacretion</li>
+                <li class="schedule__item">Dinner</li>
+                <li class="schedule__item">Vacation</li>
+              </ul>
+            </li>
+            <li class="modal__tour__item swiper-slide modal__tour__item--bukovel">
+              <div class="wrapper-title">
+                <h4 class="title-day">3 day</h4>
+              </div>
+              <ul class="schedule__list">
+                <li class="schedule__item">Breakfast</li>
+                <li class="schedule__item">A walk around Bukovel</li>
+                <li class="schedule__item">Lunch</li>
+                <li class="schedule__item">Reacretion</li>
+                <li class="schedule__item">Sauna</li>
+                <li class="schedule__item">Dinner</li>
+              </ul>
+            </li>
+            <li class="modal__tour__item swiper-slide modal__tour__item--bukovel">
+              <div class="wrapper-title">
+                <h4 class="title-day">4 day</h4>
+              </div>
+              <ul class="schedule__list">
+                <li class="schedule__item">Breakfast</li>
+                <li class="schedule__item">Reacretion</li>
+                <li class="schedule__item">Dinner</li>
+                <li class="schedule__item">Departure from Bukovel</li>
+                <li class="schedule__item">Arrival in Lviv</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="wrapper">
+          <p class="tour-price">UAH 7,499/person</p>
+          <button
+            type="button"
+            class="button modal__tour__button"
+            id="js-open-modal"
+            data-action="call-me"
+            data-check="bukovel"
+          >
+            Book a tour
+          </button>
+        </div>
+      </div>
+      <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!modal-tour-carpathians!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+      <div class="modal modal__tour" id="js-modal-window" data-action="carpathians">
+        <button type="button" class="modal__button" id="js-close-modal">
+          <svg width="30" height="30">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <h2 class="visually-hidden">Tour details</h2>
+        <h3 class="modal__tour__title">Week in Carpathians</h3>
+        <div class="swiper__modal">
+          <ul class="modal__tour__list swiper-wrapper">
+            <li class="modal__tour__item swiper-slide modal__tour__item--carpathians">
+              <div class="wrapper-title">
+                <h4 class="title-day">1 day</h4>
+              </div>
+              <ul class="schedule__list">
+                <li class="schedule__item">Departure from Lviv</li>
+                <li class="schedule__item">Dovbush rocks</li>
+                <li class="schedule__item">Lunch</li>
+                <li class="schedule__item">Tustan fortress</li>
+                <li class="schedule__item">Check-in</li>
+                <li class="schedule__item">Dinner</li>
+              </ul>
+            </li>
+            <li class="modal__tour__item swiper-slide modal__tour__item--carpathians">
+              <div class="wrapper-title">
+                <h4 class="title-day">2 day</h4>
+              </div>
+              <ul class="schedule__list">
+                <li class="schedule__item">Breakfast</li>
+                <li class="schedule__item">Lake Synevyr</li>
+                <li class="schedule__item">Ecopark “Valley of Wolves”</li>
+                <li class="schedule__item">Lunch</li>
+                <li class="schedule__item">Excursion to Kolochava</li>
+                <li class="schedule__item">Dinner</li>
+              </ul>
+            </li>
+            <li class="modal__tour__item swiper-slide modal__tour__item--carpathians">
+              <div class="wrapper-title">
+                <h4 class="title-day">3 day</h4>
+              </div>
+              <ul class="schedule__list">
+                <li class="schedule__item">Breakfast</li>
+                <li class="schedule__item">Shipit waterfall</li>
+                <li class="schedule__item">Gimba mountain</li>
+                <li class="schedule__item">Reacretion</li>
+                <li class="schedule__item">Dinner</li>
+              </ul>
+            </li>
+            <li class="modal__tour__item swiper-slide modal__tour__item--carpathians">
+              <div class="wrapper-title">
+                <h4 class="title-day">4 day</h4>
+              </div>
+              <ul class="schedule__list">
+                <li class="schedule__item">Breakfast</li>
+                <li class="schedule__item">Deer farm in Iza</li>
+                <li class="schedule__item">Warm waters in Velyatino</li>
+                <li class="schedule__item">Geographical center of Europe</li>
+                <li class="schedule__item">Dinner</li>
+              </ul>
+            </li>
+            <li class="modal__tour__item swiper-slide modal__tour__item--carpathians">
+              <div class="wrapper-title">
+                <h4 class="title-day">5 day</h4>
+              </div>
+              <ul class="schedule__list">
+                <li class="schedule__item">Breakfast</li>
+                <li class="schedule__item">Ascent to Hoverla</li>
+                <li class="schedule__item">Recreation</li>
+                <li class="schedule__item">Dinner</li>
+              </ul>
+            </li>
+            <li class="modal__tour__item swiper-slide modal__tour__item--carpathians">
+              <div class="wrapper-title">
+                <h4 class="title-day">6 day</h4>
+              </div>
+              <ul class="schedule__list">
+                <li class="schedule__item">Breakfast</li>
+                <li class="schedule__item">Hut-museum from the "Shadows of Forgotten Ancestors"</li>
+                <li class="schedule__item">Lunch</li>
+                <li class="schedule__item">Rafting of free time</li>
+                <li class="schedule__item">Dinner</li>
+              </ul>
+            </li>
+            <li class="modal__tour__item swiper-slide modal__tour__item--carpathians">
+              <div class="wrapper-title">
+                <h4 class="title-day">7 day</h4>
+              </div>
+              <ul class="schedule__list">
+                <li class="schedule__item">Breakfast</li>
+                <li class="schedule__item">Dovbush trail</li>
+                <li class="schedule__item">Souvenir fair</li>
+                <li class="schedule__item">Lunch</li>
+                <li class="schedule__item">Probij waterfall</li>
+                <li class="schedule__item">Return to Lviv</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="wrapper">
+          <p class="tour-price">UAH 9,999/person</p>
+          <button
+            type="button"
+            class="button modal__tour__button"
+            id="js-open-modal"
+            data-action="call-me"
+            data-check="carpathians"
+          >
+            Book a tour
+          </button>
         </div>
       </div>
     </div>

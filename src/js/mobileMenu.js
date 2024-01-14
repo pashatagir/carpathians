@@ -1,19 +1,19 @@
-const menuButtonEl = document.querySelectorAll('.header__button');
-const menuEl = document.querySelector('.mobile-menu');
-const menuLinksEl = document.querySelectorAll('.link');
-const heroContainerEl = document.querySelector('.hero__container');
+import { refs } from './refs';
+const { menuButtonEls, menuLinkEls, menuEl, heroContainerEl } = refs;
 
 const toggleMenu = () => {
   menuEl.classList.toggle('is-open');
   document.body.classList.toggle('no-scroll');
   heroContainerEl.classList.toggle('visually-hidden');
-  [menuButtonEl[0], menuButtonEl[1]].forEach(button => button.classList.toggle('visually-hidden'));
-  menuLinksEl[0].style.zIndex = document.body.classList.contains('no-scroll') ? 1 : '';
+  [menuButtonEls[0], menuButtonEls[1]].forEach(button =>
+    button.classList.toggle('visually-hidden')
+  );
+  menuLinkEls[0].style.zIndex = document.body.classList.contains('no-scroll') ? 1 : '';
 };
 
-menuButtonEl.forEach(item => item.addEventListener('click', toggleMenu));
+menuButtonEls.forEach(item => item.addEventListener('click', toggleMenu));
 
-menuLinksEl.forEach(item =>
+menuLinkEls.forEach(item =>
   item.addEventListener('click', () => {
     if (!document.body.classList.contains('no-scroll')) return;
     toggleMenu();

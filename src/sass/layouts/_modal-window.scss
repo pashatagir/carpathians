@@ -91,36 +91,162 @@
   height: 100%;
 }
 
-.modal__tour__item:nth-child(1) {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
-    url(/src/images/hoverla1_1x.jpg) no-repeat top center;
-  background-size: cover;
-  @include mq(retina) {
+.modal__tour__item--hoverla {
+  &:nth-child(1) {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
-      url(/src/images/hoverla1_2x.jpg) no-repeat top center;
+      url(/src/images/hoverla1_1x.jpg) no-repeat top center;
     background-size: cover;
+    @include mq(retina) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/hoverla1_2x.jpg) no-repeat top center;
+      background-size: cover;
+    }
+  }
+
+  &:nth-child(2) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+      url(/src/images/hoverla2_1x.jpg) no-repeat top center;
+    background-size: cover;
+    @include mq(retina) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/hoverla2_2x.jpg) no-repeat top center;
+      background-size: cover;
+    }
+  }
+
+  &:nth-child(3) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+      url(/src/images/hoverla3_1x.jpg) no-repeat top center;
+    background-size: cover;
+    @include mq(retina) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/hoverla3_2x.jpg) no-repeat top center;
+      background-size: cover;
+    }
   }
 }
 
-.modal__tour__item:nth-child(2) {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
-    url(/src/images/hoverla2_1x.jpg) no-repeat top center;
-  background-size: cover;
-  @include mq(retina) {
+.modal__tour__item--bukovel {
+  &:nth-child(1) {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
-      url(/src/images/hoverla2_2x.jpg) no-repeat top center;
+      url(/src/images/bukovel1_1x.jpg) no-repeat top center;
     background-size: cover;
+    @include mq(retina) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/bukovel1_2x.jpg) no-repeat top center;
+      background-size: cover;
+    }
+  }
+
+  &:nth-child(2) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+      url(/src/images/bukovel2_1x.jpg) no-repeat top center;
+    background-size: cover;
+    @include mq(retina) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/bukovel2_2x.jpg) no-repeat top center;
+      background-size: cover;
+    }
+  }
+
+  &:nth-child(3) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+      url(/src/images/bukovel3_1x.jpg) no-repeat top center;
+    background-size: cover;
+    @include mq(retina) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/bukovel3_2x.jpg) no-repeat top center;
+      background-size: cover;
+    }
+  }
+
+  &:nth-child(4) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+      url(/src/images/bukovel4_1x.jpg) no-repeat top center;
+    background-size: cover;
+    @include mq(retina) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/bukovel4_2x.jpg) no-repeat top center;
+      background-size: cover;
+    }
   }
 }
-
-.modal__tour__item:nth-child(3) {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
-    url(/src/images/hoverla3_1x.jpg) no-repeat top center;
-  background-size: cover;
-  @include mq(retina) {
+.modal__tour__item--carpathians {
+  &:nth-child(1) {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
-      url(/src/images/hoverla3_2x.jpg) no-repeat top center;
+      url(/src/images/carpathians1_1x.jpg) no-repeat top center;
     background-size: cover;
+    @include mq(retina) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians1_2x.jpg) no-repeat top center;
+      background-size: cover;
+    }
+  }
+
+  &:nth-child(2) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+      url(/src/images/carpathians2_1x.jpg) no-repeat top center;
+    background-size: cover;
+    @include mq(retina) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians2_2x.jpg) no-repeat top center;
+      background-size: cover;
+    }
+  }
+
+  &:nth-child(3) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+      url(/src/images/carpathians3_1x.jpg) no-repeat top center;
+    background-size: cover;
+    @include mq(retina) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians3_2x.jpg) no-repeat top center;
+      background-size: cover;
+    }
+  }
+
+  &:nth-child(4) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+      url(/src/images/carpathians4_1x.jpg) no-repeat top center;
+    background-size: cover;
+    @include mq(retina) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians4_2x.jpg) no-repeat top center;
+      background-size: cover;
+    }
+  }
+
+  &:nth-child(5) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+      url(/src/images/carpathians5_1x.jpg) no-repeat top center;
+    background-size: cover;
+    @include mq(retina) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians5_2x.jpg) no-repeat top center;
+      background-size: cover;
+    }
+  }
+
+  &:nth-child(6) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+      url(/src/images/carpathians6_1x.jpg) no-repeat top center;
+    background-size: cover;
+    @include mq(retina) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians6_2x.jpg) no-repeat top center;
+      background-size: cover;
+    }
+  }
+
+  &:nth-child(7) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+      url(/src/images/carpathians7_1x.jpg) no-repeat top center;
+    background-size: cover;
+    @include mq(retina) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians7_2x.jpg) no-repeat top center;
+      background-size: cover;
+    }
   }
 }
 

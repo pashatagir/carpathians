@@ -1,0 +1,16 @@
+export const refs = {
+  menuButtonEls: document.querySelectorAll('.header__button'),
+  menuEl: document.querySelector('.mobile-menu'),
+  menuLinkEls: document.querySelectorAll('.link'),
+  heroContainerEl: document.querySelector('.hero__container'),
+  anchorEls: document.querySelectorAll('a[href^="#"]'),
+  openModalButtons: document.querySelectorAll('#js-open-modal'),
+  closeModalButtons: document.querySelectorAll('#js-close-modal'),
+  modalWindowEls: document.querySelectorAll('#js-modal-window'),
+  inputCheckEls: document.querySelectorAll('input[type=checkbox]'),
+  backdropEl: document.getElementById('js-backdrop'),
+  sectionEl: document.querySelector('.tours'),
+  backHomeEl: document.querySelector('.to-top'),
+  modalWindowEl: param => document.querySelector(`div[data-action=${param}]`),
+  inputCheckEl: check => document.querySelector(`input[value=${check}]`),
+};
