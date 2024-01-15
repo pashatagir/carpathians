@@ -1,13 +1,24 @@
 .advantages__list {
-  padding: 87px 0px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
-    url(/src/images/advantages_bg_m_1x.jpg) no-repeat center;
-  background-size: cover;
-
-  @include mq(retina) {
+  @include mq(mobile-only) {
+    padding: 87px 0px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
-      url(/src/images/advantages_bg_m_2x.jpg) no-repeat center;
+      url(/src/images/advantages_bg_m_1x.jpg) no-repeat center;
     background-size: cover;
+
+    @include mq(retina) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        url(/src/images/advantages_bg_m_2x.jpg) no-repeat center;
+      background-size: cover;
+    }
+  }
+  padding: 80px 62px;
+  @include mq(tablet) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+      url(/src/images/advantages_left_1x.jpg), url(/src/images/advantages_right_1x.jpg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right, top left, bottom right;
+    background-size: 354px 441px, 354px 441px, auto, auto;
   }
 }
 
@@ -25,9 +36,27 @@
     @include font($secondFontWeight, 14px, normal, null);
   }
 
+  @include mq(tablet) {
+    padding: 12px 0px 12px 44px;
+    gap: 8px;
+    font-size: 20px;
+  }
+
   color: $bgColor;
   background-color: $accentColor;
   &:not(:last-child) {
     margin-bottom: 28px;
+    @include mq(tablet) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.advantages__icon {
+  width: 24px;
+  height: 24px;
+  @include mq(tablet) {
+    width: 40px;
+    height: 40px;
   }
 }

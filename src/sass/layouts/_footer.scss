@@ -1,8 +1,8 @@
 .footer {
   color: $bgColor;
+  background-color: $secondBlackColor;
 
   & > .container {
-    background-color: $secondBlackColor;
     padding: 40px 44px;
   }
 

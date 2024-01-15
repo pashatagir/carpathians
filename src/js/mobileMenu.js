@@ -9,6 +9,9 @@ const toggleMenu = () => {
     button.classList.toggle('visually-hidden')
   );
   menuLinkEls[0].style.zIndex = document.body.classList.contains('no-scroll') ? 1 : '';
+  menuLinkEls[0].style.transform = document.body.classList.contains('no-scroll')
+    ? 'translateX(62px)'
+    : '';
 };
 
 menuButtonEls.forEach(item => item.addEventListener('click', toggleMenu));

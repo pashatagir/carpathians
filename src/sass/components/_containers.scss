@@ -8,7 +8,7 @@
   }
 
   @include mq(tablet) {
-    width: 786px;
+    width: 768px;
     padding-inline: 20px;
   }
 
@@ -19,7 +19,9 @@
 }
 
 .advantages .container {
-  padding-inline: 30px;
+  @include mq(mobile-only) {
+    padding-inline: 30px;
+  }
 }
 
 .tours .container,

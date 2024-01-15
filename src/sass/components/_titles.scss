@@ -3,15 +3,24 @@
   color: $mainBlackColor;
   @include font($secondFontWeight, 32px, normal, null);
   margin-bottom: 28px;
+  @include mq(tablet) {
+    font-size: 52px;
+    margin-bottom: 40px;
+  }
 }
 
 .hero__title {
+  text-transform: uppercase;
   color: $bgColor;
   @include font($secondFontWeight, null, normal, null);
   font-size: 10vw;
   margin-bottom: 60px;
   @include mq(afterMobile) {
     font-size: 40px;
+  }
+  @include mq(tablet) {
+    font-size: 68px;
+    width: 728px;
   }
 }
 

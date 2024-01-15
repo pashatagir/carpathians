@@ -47,11 +47,17 @@ svg {
 .navigation {
   @include font($secondFontWeight, 28px, normal, null);
   color: $bgColor;
+  @include mq(tablet) {
+    font-weight: $mainFontWeight;
+  }
 }
 
 .about__paragraph {
   color: $secondBlackColor;
   @include font($secondFontWeight, 16px, normal, null);
+  @include mq(tablet) {
+    font-size: 20px;
+  }
 }
 
 .social-list {

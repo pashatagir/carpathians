@@ -6,16 +6,39 @@
   &__navigation {
     @include flex(flex, space-between, center);
   }
+
+  &__link {
+    transform: translateX(0);
+    transition: transform $duration $function;
+  }
+
+  &__logo {
+    width: 40px;
+    height: 40px;
+    @include mq(tablet) {
+      width: 60px;
+      height: 60px;
+    }
+  }
 }
 
 .hero {
   padding: 188px 0px 193px;
   height: 100vh;
-  background: url('/src/images/hero_bg_1x.jpg') no-repeat center;
+  background: url('/src/images/hero_bg_1x.jpg') $secondBlackColor no-repeat center;
   background-size: cover;
   @include mq(retina) {
-    background: url('/src/images/hero_bg_2x.jpg') no-repeat center;
+    background: url('/src/images/hero_bg_2x.jpg') $secondBlackColor no-repeat center;
     background-size: cover;
+  }
+  @include mq(tablet) {
+    padding: 180px 0px 185px;
+  }
+
+  br {
+    @include mq(mobile-only) {
+      display: none;
+    }
   }
 
   &__paragraph {
@@ -23,6 +46,9 @@
     text-align: center;
     margin-bottom: 88px;
     color: $bgColor;
+    @include mq(tablet) {
+      font-size: 20px;
+    }
   }
 }
 
@@ -35,16 +61,26 @@
   background-color: rgba(32, 35, 33, 0.7);
   transform: translateX(-100vw);
   transition: transform $duration $function;
+  @include mq(tablet) {
+    width: 374px;
+    padding: 184px 0 0 82px;
+  }
 
   &__navigation {
     display: flex;
     flex-direction: column;
     gap: 3.8vh;
     margin-bottom: 8.15vh;
+    @include mq(tablet) {
+      gap: 40px;
+      margin-bottom: 80px;
+    }
   }
 
   &__social-list {
-    flex-direction: column;
+    @include mq(mobile-only) {
+      flex-direction: column;
+    }
   }
 }
 
