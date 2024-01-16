@@ -9,16 +9,24 @@
     }
     @include mq(afterMobile) {
       background-position: center;
-      width: 375px;
+      width: 100%;
       margin-inline: auto;
+    }
+    @include mq(tablet) {
+      padding: 88px 0px;
     }
   }
 
   &__wrapper {
     background-color: $bgColor;
     padding: 28px 5.4vw;
+    margin-inline: auto;
     @include mq(afterMobile) {
       padding: 28px 20px;
+    }
+    @include mq(tablet) {
+      max-width: 478px;
+      padding: 40px 42px;
     }
   }
 
@@ -27,6 +35,11 @@
     color: $secondBlackColor;
     @include font($secondFontWeight, 14px, normal, null);
     margin-bottom: 24px;
+    @include mq(tablet) {
+      font-size: 18px;
+      margin-bottom: 32px;
+      padding-inline: 30px;
+    }
   }
 }
 
@@ -40,15 +53,27 @@
   border-bottom: 1px solid $inactiveColor;
   color: $secondBlackColor;
   @include font($secondFontWeight, 16px, normal, null);
+  @include mq(tablet) {
+    font-size: 20px;
+  }
   &::placeholder {
     color: $secondBlackColor;
     @include font($secondFontWeight, 4.2vw, normal, null);
     @include mq(afterMobile) {
       @include font($secondFontWeight, 16px, normal, null);
     }
+    @include mq(tablet) {
+      font-size: 20px;
+    }
+  }
+  @include mq(tablet) {
+    margin-bottom: 24px;
   }
 }
 
 .form__input:nth-of-type(3) {
   margin-bottom: 24px;
+  @include mq(tablet) {
+    margin-bottom: 32px;
+  }
 }

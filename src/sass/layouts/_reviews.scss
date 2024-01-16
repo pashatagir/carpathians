@@ -1,10 +1,16 @@
+.reviews__list {
+  @include mq(tablet) {
+    display: flex;
+    gap: 20px;
+  }
+}
 .reviews__item {
   position: relative;
   padding: 22.4vw 9.3vw 0;
+  height: 452px;
   @include mq(afterMobile) {
     padding: 84px 35px 0;
   }
-  height: 452px;
   border: 1px solid $accentColor;
   text-align: center;
   background: url(/src/images/review_bg_m_1x.jpg) no-repeat top center;
@@ -12,6 +18,17 @@
   @include mq(retina) {
     background: url(/src/images/review_bg_m_2x.jpg) no-repeat top center;
     background-size: contain;
+  }
+  @include mq(tablet) {
+    padding: 84px 20px 0px;
+    width: calc((100% - 20px) / 2);
+    height: 504px;
+    background: url(/src/images/review_bg_t_1x.jpg) no-repeat top center;
+    background-size: contain;
+    @include mq(retina) {
+      background: url(/src/images/review_bg_t_2x.jpg) no-repeat top center;
+      background-size: contain;
+    }
   }
   &:nth-of-type(1) {
     @include mq(mobile-only) {
@@ -28,23 +45,39 @@
 .reviews__avatar {
   margin-bottom: 20px;
   margin-inline: auto;
+  @include mq(tablet) {
+    margin-bottom: 24px;
+  }
 }
 
 bold.reviews__name {
   color: $accentColor;
   @include font($thirdFontWeight, 20px, normal, null);
+  @include mq(tablet) {
+    font-size: 24px;
+  }
 }
 
 .reviews__paragraph {
   text-align: left;
   margin-top: 16px;
   @include font($secondFontWeight, 16px, normal, null);
+  @include mq(tablet) {
+    margin-top: 24px;
+    font-size: 20px;
+  }
 }
 
 .reviews__icon {
   position: absolute;
   bottom: 12px;
   right: 12px;
+  width: 32px;
+  height: 32px;
+  @include mq(tablet) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .reviews__card {

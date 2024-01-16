@@ -28,16 +28,28 @@
   text-align: center;
   @include font(inherit, 20px, normal, null);
   margin-bottom: 20px;
+  @include mq(tablet) {
+    font-size: 32px;
+    margin-bottom: 24px;
+    padding-inline: 70px;
+  }
 }
 
 .tour__title {
   text-align: left;
   @include font($thirdFontWeight, 20px, normal, null);
   margin-bottom: 16px;
+  @include mq(tablet) {
+    font-size: 24px;
+  }
 }
 
 .footer__title {
   color: $bgColor;
+  @include mq(tablet) {
+    font-size: 32px;
+    grid-area: title;
+  }
 }
 
 .modal-call-me__title {

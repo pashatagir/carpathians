@@ -26,9 +26,14 @@
 
 .tours .container,
 .gallery .container {
-  padding-inline: 0;
+  @include mq(mobile-only) {
+    padding-inline: 0;
+  }
 }
 
 .footer .container {
-  padding-inline: 44px;
+  padding: 40px 44px;
+  @include mq(tablet) {
+    padding: 64px 72px;
+  }
 }
