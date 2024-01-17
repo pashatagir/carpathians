@@ -52,6 +52,11 @@
   }
 }
 
-.modal-call-me__title {
+.modal__call-me__title {
   @include font($secondFontWeight, 24px, normal, null);
+  margin-bottom: 20px;
+  @include mq(tablet) {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
 }

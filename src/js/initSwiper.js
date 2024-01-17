@@ -28,5 +28,6 @@ const swiperTour = new Swiper('.swiper__modal', {
   spaceBetween: 30,
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 });

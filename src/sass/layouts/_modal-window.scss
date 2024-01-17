@@ -8,9 +8,12 @@
   background-color: rgba(32, 35, 33, 0.5);
   top: 0;
   left: 0;
-  margin-inline: auto;
+  @include flex(flex, center, null);
   &--padding {
     padding: 140px 0px 143px;
+    @include mq(tablet) {
+      padding: 116px 0px 121px;
+    }
   }
 
   &.active {
@@ -25,9 +28,24 @@
   background-color: $bgColor;
   transition: transform $duration $function;
 
+  &__close-icon {
+    width: 30px;
+    height: 30px;
+    @include mq(tablet) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
   &__call-me {
     padding: 52px null 36px;
     transform: translateY(-100%);
+
+    @include mq(tablet) {
+      width: 478px;
+      height: 581px;
+      padding: 60px 42px 40px;
+    }
   }
 
   &__tour {
@@ -39,6 +57,9 @@
     height: 100vh;
     width: 100%;
     color: $bgColor;
+    @include mq(tablet) {
+      padding-bottom: 40px;
+    }
 
     &.open {
       display: flex;
@@ -55,6 +76,9 @@
     margin-bottom: 28px;
     @include flex(flex, start, center);
     gap: 33px;
+    @include mq(tablet) {
+      margin-bottom: 32px;
+    }
   }
   &__check::before {
     content: '';
@@ -89,6 +113,9 @@
 .modal__tour__item {
   padding-top: 90px;
   height: 100%;
+  @include mq(tablet) {
+    padding-top: 101px;
+  }
 }
 
 .modal__tour__item--hoverla {
@@ -101,6 +128,16 @@
         url(/src/images/hoverla1_2x.jpg) no-repeat top center;
       background-size: cover;
     }
+    @include mq(tablet) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/hoverla1_t_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/hoverla1_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
   }
 
   &:nth-child(2) {
@@ -112,6 +149,16 @@
         url(/src/images/hoverla2_2x.jpg) no-repeat top center;
       background-size: cover;
     }
+    @include mq(tablet) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/hoverla2_t_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/hoverla2_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
   }
 
   &:nth-child(3) {
@@ -122,6 +169,16 @@
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
         url(/src/images/hoverla3_2x.jpg) no-repeat top center;
       background-size: cover;
+    }
+    @include mq(tablet) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/hoverla3_t_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/hoverla3_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
     }
   }
 }
@@ -136,6 +193,16 @@
         url(/src/images/bukovel1_2x.jpg) no-repeat top center;
       background-size: cover;
     }
+    @include mq(tablet) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/bukovel1_t_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/bukovel1_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
   }
 
   &:nth-child(2) {
@@ -146,6 +213,16 @@
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
         url(/src/images/bukovel2_2x.jpg) no-repeat top center;
       background-size: cover;
+    }
+    @include mq(tablet) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/bukovel2_t_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/bukovel2_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
     }
   }
 
@@ -158,6 +235,16 @@
         url(/src/images/bukovel3_2x.jpg) no-repeat top center;
       background-size: cover;
     }
+    @include mq(tablet) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/bukovel3_t_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/bukovel3_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
   }
 
   &:nth-child(4) {
@@ -168,6 +255,16 @@
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
         url(/src/images/bukovel4_2x.jpg) no-repeat top center;
       background-size: cover;
+    }
+    @include mq(tablet) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/bukovel4_t_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/bukovel4_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
     }
   }
 }
@@ -181,6 +278,16 @@
         url(/src/images/carpathians1_2x.jpg) no-repeat top center;
       background-size: cover;
     }
+    @include mq(tablet) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians1_t_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/carpathians1_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
   }
 
   &:nth-child(2) {
@@ -191,6 +298,16 @@
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
         url(/src/images/carpathians2_2x.jpg) no-repeat top center;
       background-size: cover;
+    }
+    @include mq(tablet) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians2_t_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/carpathians2_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
     }
   }
 
@@ -203,6 +320,16 @@
         url(/src/images/carpathians3_2x.jpg) no-repeat top center;
       background-size: cover;
     }
+    @include mq(tablet) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians3_t_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/carpathians3_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
   }
 
   &:nth-child(4) {
@@ -213,6 +340,16 @@
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
         url(/src/images/carpathians4_2x.jpg) no-repeat top center;
       background-size: cover;
+    }
+    @include mq(tablet) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians4_t_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/carpathians4_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
     }
   }
 
@@ -225,6 +362,16 @@
         url(/src/images/carpathians5_2x.jpg) no-repeat top center;
       background-size: cover;
     }
+    @include mq(tablet) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians5_t_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/carpathians5_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
   }
 
   &:nth-child(6) {
@@ -235,6 +382,16 @@
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
         url(/src/images/carpathians6_2x.jpg) no-repeat top center;
       background-size: cover;
+    }
+    @include mq(tablet) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians6_t_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/carpathians6_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
     }
   }
 
@@ -247,6 +404,16 @@
         url(/src/images/carpathians7_2x.jpg) no-repeat top center;
       background-size: cover;
     }
+    @include mq(tablet) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians7_t_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/carpathians7_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
   }
 }
 
@@ -256,6 +423,11 @@
   top: 56px;
   left: 78px;
   z-index: 2;
+  @include mq(tablet) {
+    font-size: 24px;
+    top: 60px;
+    left: 90px;
+  }
 }
 
 .wrapper-title {
@@ -264,26 +436,44 @@
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   margin-right: 37px;
+  @include mq(tablet) {
+    margin-right: 365px;
+    margin-bottom: 16px;
+  }
 }
 
 .title-day {
   padding: 14px 0px 14px 48px;
   @include font(inherit, 16px, null, normal);
+  @include mq(tablet) {
+    padding: 12px 0px 12px 60px;
+    font-size: 20px;
+  }
 }
 
 .schedule__list {
   padding-left: 48px;
   line-height: normal;
+  @include mq(tablet) {
+    font-size: 20px;
+    padding-left: 60px;
+  }
 }
 
 .schedule__item:not(:last-child) {
   margin-bottom: 12px;
+  @include mq(tablet) {
+    margin-bottom: 16px;
+  }
 }
 
 .tour-price {
   text-align: center;
   color: $secondBlackColor;
   @include font($thirdFontWeight, 16px, null, normal);
+  @include mq(tablet) {
+    font-size: 20px;
+  }
 }
 
 .modal__tour__button {

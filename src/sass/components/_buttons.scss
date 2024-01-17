@@ -46,6 +46,10 @@ button {
   top: 12px;
   right: 12px;
   stroke: $secondBlackColor;
+  @include mq(tablet) {
+    top: 20px;
+    right: 20px;
+  }
 }
 
 .modal__button {
@@ -54,4 +58,8 @@ button {
   right: 42px;
   stroke: $bgColor;
   z-index: 2;
+  @include mq(tablet) {
+    top: 20px;
+    right: 50px;
+  }
 }
