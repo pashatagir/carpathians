@@ -5,6 +5,10 @@
 
   &__navigation {
     @include flex(flex, space-between, center);
+    @include mq(desktop) {
+      justify-content: center;
+      gap: 318px;
+    }
   }
 
   &__link {
@@ -22,8 +26,37 @@
   }
 }
 
+.nav__link__wrapper {
+  display: flex;
+  gap: 80px;
+  @include font(inherit, 24px, normal, null);
+  @include mq(notDesktop) {
+    display: none;
+  }
+}
+
+.nav__link {
+  position: relative;
+  &:hover::after,
+  &:focus::after {
+    transform: scaleX(1);
+  }
+}
+
+.nav__link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 1px;
+  background-color: $accentColor;
+  transform: scaleX(0);
+  transition: transform $duration $function;
+}
+
 .hero {
-  padding: 188px 0px 193px;
+  padding-top: 188px;
   height: 100vh;
   background: url('/src/images/hero_bg_1x.jpg') $secondBlackColor no-repeat center;
   background-size: cover;
@@ -32,12 +65,16 @@
     background-size: cover;
   }
   @include mq(tablet) {
-    padding: 180px 0px 185px;
+    padding-top: 180px;
   }
 
-  br {
-    @include mq(mobile-only) {
-      display: none;
+  @include mq(desktop) {
+    padding-top: 280px;
+    background: url('/src/images/hero_bg_1440_1x.jpg') $secondBlackColor no-repeat center;
+    background-size: cover;
+    @include mq(retina) {
+      background: url('/src/images/hero_bg_1440_2x.jpg') $secondBlackColor no-repeat center;
+      background-size: cover;
     }
   }
 
@@ -48,6 +85,17 @@
     color: $bgColor;
     @include mq(tablet) {
       font-size: 20px;
+    }
+    @include mq(desktop) {
+      font-size: 28px;
+    }
+  }
+
+  &__social-list {
+    @include flex(flex, center, end);
+    flex-direction: column;
+    @include mq(notDesktop) {
+      display: none;
     }
   }
 }

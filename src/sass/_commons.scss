@@ -87,8 +87,8 @@ svg {
     right: 15px;
   }
   @include mq(desktop) {
-    bottom: 20px;
-    right: 20px;
+    bottom: 40px;
+    right: 40px;
   }
   &:focus,
   &:hover {

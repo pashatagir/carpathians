@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   padding-inline: 32px;
-  margin-inline: auto;
+  margin: 0px auto;
 
   @include mq(mobile) {
     width: 375px;

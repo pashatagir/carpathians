@@ -15,12 +15,23 @@
   @include font($secondFontWeight, null, normal, null);
   font-size: 10vw;
   margin-bottom: 60px;
+  margin-inline: auto;
   @include mq(afterMobile) {
     font-size: 40px;
   }
   @include mq(tablet) {
     font-size: 68px;
-    width: 728px;
+  }
+  @include mq(desktop) {
+    font-size: 88px;
+  }
+  & > br {
+    @include mq(mobile-only) {
+      display: none;
+    }
+    @include mq(desktop) {
+      display: none;
+    }
   }
 }
 

@@ -22,8 +22,10 @@ button {
     font-size: 16px;
   }
   @include mq(tablet) {
-    padding: 16px 123px;
     font-size: 20px;
+  }
+  @include mq(desktop) {
+    font-size: 24px;
   }
 }
 
@@ -32,6 +34,18 @@ button {
   &:focus,
   &:hover {
     stroke: $accentColor;
+  }
+  @include mq(desktop) {
+    display: none;
+  }
+}
+
+.hero__button {
+  @include mq(tablet) {
+    padding: 16px 123px;
+  }
+  @include mq(desktop) {
+    padding: 20px 199px;
   }
 }
 

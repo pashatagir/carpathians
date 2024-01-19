@@ -32,6 +32,7 @@
   }
 
   &-bullet {
+    cursor: pointer;
     width: 12px;
     height: 12px;
     @include mq(tablet) {
