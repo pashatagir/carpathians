@@ -11,14 +11,38 @@
       background-size: cover;
     }
   }
-  padding: 80px 62px;
+
   @include mq(tablet) {
+    padding: 80px 62px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
       linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
       url(/src/images/advantages_left_1x.jpg), url(/src/images/advantages_right_1x.jpg);
     background-repeat: no-repeat;
     background-position: top left, bottom right, top left, bottom right;
     background-size: 354px 441px, 354px 441px, auto, auto;
+
+    @include mq(retina) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        url(/src/images/advantages_left_2x.jpg), url(/src/images/advantages_right_2x.jpg);
+      background-repeat: no-repeat;
+      background-position: top left, bottom right, top left, bottom right;
+      background-size: 354px 441px, 354px 441px, 354px 441px, 354px 441px;
+    }
+  }
+  @include mq(desktop) {
+    background: url(/src/images/advantages_left_d_1x.jpg),
+      url(/src/images/advantages_center_d_1x.jpg), url(/src/images/advantages_right_d_1x.jpg);
+    background-repeat: no-repeat;
+    background-position: top left, center, bottom right;
+    background-size: auto;
+    @include mq(retina) {
+      background: url(/src/images/advantages_left_d_2x.jpg),
+        url(/src/images/advantages_center_d_2x.jpg), url(/src/images/advantages_right_d_2x.jpg);
+      background-repeat: no-repeat;
+      background-position: top left, center, bottom right;
+      background-size: 377px 588px, 377px 507px, 377px 588px;
+    }
   }
 }
 
@@ -38,8 +62,15 @@
 
   @include mq(tablet) {
     padding: 12px 0px 12px 44px;
-    gap: 8px;
+    gap: 12px;
     font-size: 20px;
+  }
+
+  @include mq(desktop) {
+    padding: 12.3px 0px 12.3px 126px;
+    font-size: 24px;
+    width: 630px;
+    margin: 0 auto;
   }
 
   color: $bgColor;
@@ -48,6 +79,9 @@
     margin-bottom: 28px;
     @include mq(tablet) {
       margin-bottom: 20px;
+    }
+    @include mq(desktop) {
+      margin-bottom: 24px;
     }
   }
 }

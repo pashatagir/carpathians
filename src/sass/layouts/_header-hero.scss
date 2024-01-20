@@ -5,10 +5,6 @@
 
   &__navigation {
     @include flex(flex, space-between, center);
-    @include mq(desktop) {
-      justify-content: center;
-      gap: 318px;
-    }
   }
 
   &__link {
@@ -88,12 +84,21 @@
     }
     @include mq(desktop) {
       font-size: 28px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__container {
+    @include mq(desktop) {
+      position: relative;
     }
   }
 
   &__social-list {
-    @include flex(flex, center, end);
+    position: absolute;
     flex-direction: column;
+    bottom: -102px;
+    right: 135px;
     @include mq(notDesktop) {
       display: none;
     }
