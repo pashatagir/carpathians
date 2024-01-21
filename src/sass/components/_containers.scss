@@ -34,6 +34,9 @@
 .footer .container {
   padding: 40px 44px;
   @include mq(tablet) {
-    padding: 64px 72px;
+    padding: 64px 0px;
+  }
+  @include mq(desktop) {
+    padding: 60px 0 48px;
   }
 }

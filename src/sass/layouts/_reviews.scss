@@ -30,6 +30,18 @@
       background-size: contain;
     }
   }
+
+  @include mq(desktop) {
+    padding: 72px 28px 0px;
+    height: 570px;
+    background: url(/src/images/review_bg_d_1x.jpg) no-repeat top center;
+    background-size: contain;
+    @include mq(retina) {
+      background: url(/src/images/review_bg_d_2x.jpg) no-repeat top center;
+      background-size: contain;
+    }
+  }
+
   &:nth-of-type(1) {
     @include mq(mobile-only) {
       margin-bottom: 32px;
@@ -45,7 +57,7 @@
 .reviews__avatar {
   margin-bottom: 20px;
   margin-inline: auto;
-  @include mq(tablet) {
+  @include mq(tablet-only) {
     margin-bottom: 24px;
   }
 }

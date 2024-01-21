@@ -48,6 +48,11 @@
     margin-bottom: 24px;
     padding-inline: 70px;
   }
+  @include mq(desktop) {
+    font-size: 48px;
+    margin-bottom: 32px;
+    padding: 0;
+  }
 }
 
 .tour__title {
@@ -63,6 +68,10 @@
   color: $bgColor;
   @include mq(tablet) {
     font-size: 32px;
+    grid-area: title;
+  }
+  @include mq(desktop) {
+    font-size: 60px;
     grid-area: title;
   }
 }

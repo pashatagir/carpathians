@@ -62,6 +62,12 @@
   }
   @include mq(tablet) {
     padding-top: 180px;
+    background: url('/src/images/hero_bg_t_1x.jpg') $secondBlackColor no-repeat center;
+    background-size: cover;
+    @include mq(retina) {
+      background: url('/src/images/hero_bg_t_2x.jpg') $secondBlackColor no-repeat center;
+      background-size: cover;
+    }
   }
 
   @include mq(desktop) {

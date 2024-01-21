@@ -1,3 +1,10 @@
+.swiper-wrapper > .swiper-slide {
+  width: fit-content;
+  @include mq(desktop) {
+    width: calc((100% - 40px) / 3);
+  }
+}
+
 .swiper__navigation {
   @include flex(flex, center, center);
   gap: 40px;

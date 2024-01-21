@@ -59,6 +59,11 @@
     color: $bgColor;
     @include mq(tablet) {
       padding-bottom: 40px;
+      gap: 40px;
+    }
+    @include mq(desktop) {
+      padding: 0px 135px 60px;
+      gap: 48px;
     }
 
     &.open {
@@ -116,6 +121,9 @@
   @include mq(tablet) {
     padding-top: 101px;
   }
+  @include mq(desktop) {
+    padding-top: 169px;
+  }
 }
 
 .modal__tour__item--hoverla {
@@ -135,6 +143,16 @@
       @include mq(retina) {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
           url(/src/images/hoverla1_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
+    @include mq(desktop) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/hoverla1_d_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/hoverla1_d_2x.jpg) no-repeat top center;
         background-size: cover;
       }
     }
@@ -159,6 +177,16 @@
         background-size: cover;
       }
     }
+    @include mq(desktop) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/hoverla2_d_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/hoverla2_d_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
   }
 
   &:nth-child(3) {
@@ -177,6 +205,16 @@
       @include mq(retina) {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
           url(/src/images/hoverla3_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
+    @include mq(desktop) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/hoverla3_d_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/hoverla3_d_2x.jpg) no-repeat top center;
         background-size: cover;
       }
     }
@@ -203,6 +241,16 @@
         background-size: cover;
       }
     }
+    @include mq(desktop) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/bukovel1_d_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/bukovel1_d_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
   }
 
   &:nth-child(2) {
@@ -221,6 +269,16 @@
       @include mq(retina) {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
           url(/src/images/bukovel2_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
+    @include mq(desktop) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/bukovel2_d_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/bukovel2_d_2x.jpg) no-repeat top center;
         background-size: cover;
       }
     }
@@ -245,6 +303,16 @@
         background-size: cover;
       }
     }
+    @include mq(desktop) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/bukovel3_d_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/bukovel3_d_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
   }
 
   &:nth-child(4) {
@@ -263,6 +331,16 @@
       @include mq(retina) {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
           url(/src/images/bukovel4_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
+    @include mq(desktop) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/bukovel4_d_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/bukovel4_d_2x.jpg) no-repeat top center;
         background-size: cover;
       }
     }
@@ -288,6 +366,16 @@
         background-size: cover;
       }
     }
+    @include mq(desktop) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians1_d_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/carpathians1_d_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
   }
 
   &:nth-child(2) {
@@ -306,6 +394,16 @@
       @include mq(retina) {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
           url(/src/images/carpathians2_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
+    @include mq(desktop) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians2_d_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/carpathians2_d_2x.jpg) no-repeat top center;
         background-size: cover;
       }
     }
@@ -330,6 +428,16 @@
         background-size: cover;
       }
     }
+    @include mq(desktop) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians3_d_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/carpathians3_d_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
   }
 
   &:nth-child(4) {
@@ -348,6 +456,16 @@
       @include mq(retina) {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
           url(/src/images/carpathians4_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
+    @include mq(desktop) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians4_d_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/carpathians4_d_2x.jpg) no-repeat top center;
         background-size: cover;
       }
     }
@@ -372,6 +490,16 @@
         background-size: cover;
       }
     }
+    @include mq(desktop) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians5_d_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/carpathians5_d_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
   }
 
   &:nth-child(6) {
@@ -390,6 +518,16 @@
       @include mq(retina) {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
           url(/src/images/carpathians6_t_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
+    @include mq(desktop) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians6_d_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/carpathians6_d_2x.jpg) no-repeat top center;
         background-size: cover;
       }
     }
@@ -414,6 +552,16 @@
         background-size: cover;
       }
     }
+    @include mq(desktop) {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+        url(/src/images/carpathians7_d_1x.jpg) no-repeat top center;
+      background-size: cover;
+      @include mq(retina) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+          url(/src/images/carpathians7_d_2x.jpg) no-repeat top center;
+        background-size: cover;
+      }
+    }
   }
 }
 
@@ -428,6 +576,11 @@
     top: 60px;
     left: 90px;
   }
+  @include mq(desktop) {
+    font-size: 40px;
+    top: 108px;
+    left: 235px;
+  }
 }
 
 .wrapper-title {
@@ -440,6 +593,9 @@
     margin-right: 365px;
     margin-bottom: 16px;
   }
+  @include mq(desktop) {
+    margin-right: 630px;
+  }
 }
 
 .title-day {
@@ -449,6 +605,10 @@
     padding: 12px 0px 12px 60px;
     font-size: 20px;
   }
+  @include mq(desktop) {
+    padding: 7px 0px 7px 100px;
+    font-size: 28px;
+  }
 }
 
 .schedule__list {
@@ -457,6 +617,10 @@
   @include mq(tablet) {
     font-size: 20px;
     padding-left: 60px;
+  }
+  @include mq(tablet) {
+    font-size: 28px;
+    padding-left: 100px;
   }
 }
 
@@ -474,8 +638,7 @@
   @include mq(tablet) {
     font-size: 20px;
   }
-}
-
-.modal__tour__button {
-  margin-top: 16px;
+  @include mq(tablet) {
+    font-size: 24px;
+  }
 }

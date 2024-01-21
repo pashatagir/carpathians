@@ -49,6 +49,18 @@ button {
   }
 }
 
+.modal__tour__button {
+  margin-top: 16px;
+  @include mq(tablet) {
+    margin-top: 24px;
+    padding: 16px 123px;
+  }
+  @include mq(desktop) {
+    margin-top: 28px;
+    padding: 20px 199px;
+  }
+}
+
 .tour__button,
 .questions__button {
   padding-inline: 0;
@@ -76,4 +88,19 @@ button {
     top: 20px;
     right: 50px;
   }
+  @include mq(desktop) {
+    top: 40px;
+    right: 175px;
+  }
+}
+
+.hero__button:hover,
+.hero__button:focus,
+.modal__tour__button:hover,
+.modal__tour__button:focus,
+.tour__button:hover,
+.tour__button:focus,
+.questions__button:hover,
+.questions__button:focus {
+  background-color: $mainBlackColor;
 }
