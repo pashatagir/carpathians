@@ -76,6 +76,10 @@ button {
     top: 20px;
     right: 20px;
   }
+  @include mq(desktop) {
+    top: 40px;
+    right: 40px;
+  }
 }
 
 .modal__button {

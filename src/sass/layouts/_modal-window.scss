@@ -10,9 +10,12 @@
   left: 0;
   @include flex(flex, center, null);
   &--padding {
-    padding: 140px 0px 143px;
+    padding-top: 140px;
     @include mq(tablet) {
-      padding: 116px 0px 121px;
+      padding-top: 116px;
+    }
+    @include mq(desktop) {
+      padding-top: 144px;
     }
   }
 
@@ -38,13 +41,29 @@
   }
 
   &__call-me {
-    padding: 52px null 36px;
+    padding: 52px 32px 0px;
+    min-height: 504px;
     transform: translateY(-100%);
 
     @include mq(tablet) {
       width: 478px;
-      height: 581px;
-      padding: 60px 42px 40px;
+      min-height: 581px;
+      padding: 60px 42px 0px;
+    }
+    @include mq(desktop) {
+      width: 774px;
+      min-height: 745px;
+      padding: 116px 100px 0px;
+    }
+    & .questions__paragraph {
+      @include mq(tablet) {
+        padding-inline: 35px;
+      }
+      @include mq(desktop) {
+        font-size: 24px;
+        margin-bottom: 32px;
+        padding-inline: 15px;
+      }
     }
   }
 
@@ -83,6 +102,20 @@
     gap: 33px;
     @include mq(tablet) {
       margin-bottom: 32px;
+    }
+    @include mq(desktop) {
+      font-size: 24px;
+      margin-bottom: 24px;
+      padding-inline: 0;
+    }
+    &:last-of-type {
+      margin-bottom: 26px;
+      @include mq(tablet) {
+        margin-bottom: 32px;
+      }
+      @include mq(desktop) {
+        margin-bottom: 44px;
+      }
     }
   }
   &__check::before {

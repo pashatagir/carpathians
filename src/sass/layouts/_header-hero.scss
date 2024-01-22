@@ -69,7 +69,6 @@
       background-size: cover;
     }
   }
-
   @include mq(desktop) {
     padding-top: 280px;
     background: url('/src/images/hero_bg_1440_1x.jpg') $secondBlackColor no-repeat center;
