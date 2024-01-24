@@ -23,20 +23,14 @@
   @include mq(afterMobile) {
     font-size: 40px;
   }
-  @include mq(tablet) {
+  @include mq(tablet-only) {
+    display: flex;
+    flex-direction: column;
     font-size: 68px;
   }
   @include mq(desktop) {
     font-size: 88px;
     margin-bottom: 40px;
-  }
-  & > br {
-    @include mq(mobile-only) {
-      display: none;
-    }
-    @include mq(desktop) {
-      display: none;
-    }
   }
 }
 
