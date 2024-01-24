@@ -28,6 +28,7 @@
   }
   @include mq(desktop) {
     font-size: 88px;
+    margin-bottom: 40px;
   }
   & > br {
     @include mq(mobile-only) {

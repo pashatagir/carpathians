@@ -18,11 +18,7 @@
               <use href="./images/sprite.svg#menu"></use>
             </svg>
           </button>
-          <button type="button" class="header__button visually-hidden">
-            <svg width="40" height="40">
-              <use href="./images/sprite.svg#close"></use>
-            </svg>
-          </button>
+
           <div class="nav__link__wrapper">
             <a href="#about-us" class="link nav__link">About us</a
             ><a href="#tours" class="link nav__link">Tours</a
@@ -34,11 +30,25 @@
       </div>
       <div class="mobile-menu">
         <nav class="navigation mobile-menu__navigation">
-          <a href="#about-us" class="link mobile-menu__link">About us</a
-          ><a href="#tours" class="link mobile-menu__link">Tours</a
-          ><a href="#reviews" class="link mobile-menu__link">Reviews</a
-          ><a href="#gallery" class="link mobile-menu__link">Gallery</a
-          ><a href="#contacts" class="link mobile-menu__link">Contacts</a>
+          <div class="mobile-menu__wrapper">
+            <a href="#header" class="link header__link"
+              ><svg class="header__logo">
+                <use href="./images/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <button type="button" class="header__button">
+              <svg width="40" height="40">
+                <use href="./images/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="mobile-menu__link-list">
+            <li><a href="#about-us" class="link mobile-menu__link">About us</a></li>
+            <li><a href="#tours" class="link mobile-menu__link">Tours</a></li>
+            <li><a href="#reviews" class="link mobile-menu__link">Reviews</a></li>
+            <li><a href="#gallery" class="link mobile-menu__link">Gallery</a></li>
+            <li><a href="#contacts" class="link mobile-menu__link">Contacts</a></li>
+          </ul>
         </nav>
         <ul class="social-list mobile-menu__social-list">
           <li>
