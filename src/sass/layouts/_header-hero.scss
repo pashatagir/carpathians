@@ -121,13 +121,13 @@
     url('/src/images/hero_bg_1x.jpg');
   background-repeat: no-repeat;
   background-position: left center, center;
-  background-size: 233px, cover;
+  background-size: 233px 100vh, cover;
   @include mq(retina) {
     background: linear-gradient(0deg, rgba(32, 35, 33, 0.7) 0%, rgba(32, 35, 33, 0.7) 100%),
       url('/src/images/hero_bg_2x.jpg');
     background-repeat: no-repeat;
     background-position: left center, center;
-    background-size: 233px, cover;
+    background-size: 233px 100vh, cover;
   }
 
   transform: translateX(-100vw);
@@ -137,13 +137,13 @@
       url('/src/images/hero_bg_t_1x.jpg');
     background-repeat: no-repeat;
     background-position: left center, center;
-    background-size: 374px, cover;
+    background-size: 374px 100vh, cover;
     @include mq(retina) {
       background: linear-gradient(0deg, rgba(32, 35, 33, 0.7) 0%, rgba(32, 35, 33, 0.7) 100%),
         url('/src/images/hero_bg_t_2x.jpg');
       background-repeat: no-repeat;
       background-position: left center, center;
-      background-size: 374px, cover;
+      background-size: 374px 100vh, cover;
     }
     padding: 24px 20px 0 82px;
   }

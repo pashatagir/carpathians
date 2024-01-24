@@ -10,7 +10,7 @@
   left: 0;
   @include flex(flex, center, null);
   &--padding {
-    padding-top: 140px;
+    padding-top: 17.8vh;
     @include mq(tablet) {
       padding-top: 116px;
     }
