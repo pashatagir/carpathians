@@ -31,13 +31,6 @@
   }
 }
 
-// .tours__image > img,
-// .gallery__image > img {
-//   @include mq(desktop) {
-//     height: 100%;
-//   }
-// }
-
 .tours__image::after {
   content: '';
   position: absolute;

@@ -61,6 +61,9 @@ svg {
   @include mq(desktop) {
     font-size: 24px;
   }
+  &:first-of-type {
+    margin-bottom: 8px;
+  }
 }
 
 .social-list {
