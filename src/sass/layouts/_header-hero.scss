@@ -169,18 +169,8 @@
     flex-direction: column;
     gap: 30px;
   }
-
-  &__social-list {
-    @include mq(mobile-only) {
-      flex-direction: column;
-    }
-  }
 }
 
 .is-open {
   transform: translateX(0);
-}
-
-.hidden {
-  opacity: 0;
 }

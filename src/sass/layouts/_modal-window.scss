@@ -9,6 +9,9 @@
   top: 0;
   left: 0;
   @include flex(flex, center, null);
+  &--padding-small {
+    padding-top: 80px;
+  }
   &--padding {
     padding-top: 17.8vh;
     @include mq(tablet) {

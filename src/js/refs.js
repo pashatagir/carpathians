@@ -11,6 +11,7 @@ export const refs = {
   backdropEl: document.getElementById('js-backdrop'),
   sectionEl: document.querySelector('.tours'),
   backHomeEl: document.querySelector('.to-top'),
+  socialListEl: document.querySelector('.mobile-menu__social-list'),
   modalWindowEl: param => document.querySelector(`div[data-action=${param}]`),
   inputCheckEl: check => document.querySelector(`input[value=${check}]`),
 };

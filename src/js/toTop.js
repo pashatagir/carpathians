@@ -1,9 +1,11 @@
+import smoothscroll from 'smoothscroll-polyfill';
 import { refs } from './refs';
 const { backHomeEl, anchorEls } = refs;
 
 anchorEls.forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
+    smoothscroll.polyfill();
     document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
   });
 });

@@ -17,7 +17,11 @@ function openModalCall(param, check) {
   modalWindowEls.forEach(item => item.classList.remove('open'));
   inputCheckEl(check).setAttribute('checked', true);
   modalWindowEl(param).style.transform = 'translateY(0%)';
-  backdropEl.classList.add('active', 'backdrop--padding');
+  if (window.innerHeight < 700) {
+    backdropEl.classList.add('active', 'backdrop--padding-small');
+  } else {
+    backdropEl.classList.add('active', 'backdrop--padding');
+  }
   document.body.classList.add('no-scroll');
   backHomeEl.style.display = 'none';
 }
@@ -43,7 +47,7 @@ function closeModal() {
   modalWindowEls.forEach(item => item.classList.remove('open'));
   sectionEl.style.opacity = 1;
   document.body.classList.remove('no-scroll');
-  backdropEl.classList.remove('active', 'backdrop--padding');
+  backdropEl.classList.remove('active', 'backdrop--padding', 'backdrop--padding-small');
 }
 
 function onEscPress(e) {

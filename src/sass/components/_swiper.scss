@@ -1,8 +1,15 @@
 .swiper-wrapper > .swiper-slide {
   width: fit-content;
+}
+
+.swiper__tours .swiper-slide {
   @include mq(desktop) {
-    width: calc((100% - 40px) / 3);
+    width: 377px;
   }
+}
+
+.gallery__image img {
+  width: 100%;
 }
 
 .swiper__navigation {
